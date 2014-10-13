@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Copycat</string>
+
+	<!-- Activities labels -->
+	<string name="activity_label_start">@string/app_name</string>
+	<string name="activity_label_pattern">Pattern generator</string>
+	<string name="activity_label_settings">Application settings</string>
+
+	<string name="launcher_title">Pattern generator</string>
+	<string name="settings_button">Settings</string>
+	<string name="start_button">START</string>
+	<string name="generate_button">Generate next pattern</string>
+
+	<string name="pref_header_pattern">Patern generator settings</string>
+	<string name="pref_pattern_grid_size_title">Grid size</string>
+	<string name="pref_pattern_grid_size_sum">Select grid size from list</string>
+	<string name="pref_pattern_max_dots_title">Dots per pattern</string>
+	<string name="pref_pattern_max_dots_sum">Select value from list</string>
+	<string name="pref_pattern_max_shapes_title">Shapes per pattern</string>
+	<string name="pref_pattern_max_shapes_sum">Select value from list</string>
+	<string name="pref_pattern_max_colors_title">Colors per pattern</string>
+	<string name="pref_pattern_max_colors_sum">Select value from list</string>
+	<string name="pref_pattern_allow_open_title">Allow open shapes</string>
+	<string name="pref_pattern_allow_open_summary">Check this to allow open shapes in the pattern</string>
+	<string name="pref_pattern_allow_diagonals_title">Allow diagonals lines</string>
+	<string name="pref_pattern_allow_diagonals_sum">Check this to allow diagonals lines in shapes</string>
+
+</resources>

@@ -1,0 +1,4341 @@
+_____________________________________________________________________
++ Program class: com/tectus/a/a/a
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.tectus.a.a.a extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 49):
+  + String [,]
+  + String [{]
+  + String [}]
+  + Class [com/tectus/a/a/a]
+  + Class [java/lang/Object]
+  + Class [java/lang/StringBuilder]
+  + Fieldref [com/tectus/a/a/a.a I]
+  + Fieldref [com/tectus/a/a/a.b I]
+  + Methodref [com/tectus/a/a/a.<init> (II)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+  + Methodref [java/lang/StringBuilder.<init> ()V]
+  + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (II)V]
+  + NameAndType [a I]
+  + NameAndType [append (I)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b I]
+  + NameAndType [getClass ()Ljava/lang/Class;]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [()I]
+  + Utf8 [()Ljava/lang/Class;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Ljava/lang/StringBuilder;]
+  + Utf8 [(II)V]
+  + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [,]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [com/tectus/a/a/a]
+  + Utf8 [equals]
+  + Utf8 [getClass]
+  + Utf8 [hashCode]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [toString]
+  + Utf8 [{]
+  + Utf8 [}]
+
+Fields (count = 2):
+  + Field:        a I
+    Access flags: 0x1
+      = public int a
+  + Field:        b I
+    Access flags: 0x1
+      = public int b
+
+Methods (count = 5):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 7, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] iconst_0
+      [2] iconst_0
+      [3] invokespecial #9
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [6] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       <init>(II)V
+    Access flags: 0x1
+      = public a(int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 25, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #10
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] iconst_0
+      [6] putfield #7
+        + Fieldref [com/tectus/a/a/a.a I]
+      [9] aload_0 v0
+      [10] iconst_0
+      [11] putfield #8
+        + Fieldref [com/tectus/a/a/a.b I]
+      [14] aload_0 v0
+      [15] iload_1 v1
+      [16] putfield #7
+        + Fieldref [com/tectus/a/a/a.a I]
+      [19] aload_0 v0
+      [20] iload_2 v2
+      [21] putfield #8
+        + Fieldref [com/tectus/a/a/a.b I]
+      [24] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       equals(Ljava/lang/Object;)Z
+    Access flags: 0x1
+      = public boolean equals(java.lang.Object)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 54, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] ifacmpeq +46 (target=48)
+      [5] aload_1 v1
+      [6] ifnull +46 (target=52)
+      [9] aload_0 v0
+      [10] invokevirtual #11
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [13] aload_1 v1
+      [14] invokevirtual #11
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [17] ifacmpne +35 (target=52)
+      [20] aload_0 v0
+      [21] getfield #7
+        + Fieldref [com/tectus/a/a/a.a I]
+      [24] aload_1 v1
+      [25] checkcast #4
+        + Class [com/tectus/a/a/a]
+      [28] getfield #7
+        + Fieldref [com/tectus/a/a/a.a I]
+      [31] ificmpne +21 (target=52)
+      [34] aload_0 v0
+      [35] getfield #8
+        + Fieldref [com/tectus/a/a/a.b I]
+      [38] aload_1 v1
+      [39] checkcast #4
+        + Class [com/tectus/a/a/a]
+      [42] getfield #8
+        + Fieldref [com/tectus/a/a/a.b I]
+      [45] ificmpne +7 (target=52)
+      [48] iconst_1
+      [49] goto +4 (target=53)
+      [52] iconst_0
+      [53] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [48] Var: ..., Stack: (empty)
+        - [52] Var: ..., Stack: (empty)
+        - [53] Var: ..., Stack: [i]
+  + Method:       hashCode()I
+    Access flags: 0x1
+      = public int hashCode()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 17, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #7
+        + Fieldref [com/tectus/a/a/a.a I]
+      [4] istore_1 v1
+      [5] bipush 31
+      [7] iload_1 v1
+      [8] imul
+      [9] aload_0 v0
+      [10] getfield #8
+        + Fieldref [com/tectus/a/a/a.b I]
+      [13] iadd
+      [14] istore_1 v1
+      [15] iload_1 v1
+      [16] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       toString()Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String toString()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 40, locals = 1, stack = 2):
+      [0] new #6
+        + Class [java/lang/StringBuilder]
+      [3] dup
+      [4] invokespecial #12
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [7] ldc #2
+        + String [{]
+      [9] invokevirtual #14
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [12] aload_0 v0
+      [13] getfield #7
+        + Fieldref [com/tectus/a/a/a.a I]
+      [16] invokevirtual #13
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [19] ldc #1
+        + String [,]
+      [21] invokevirtual #14
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [24] aload_0 v0
+      [25] getfield #8
+        + Fieldref [com/tectus/a/a/a.b I]
+      [28] invokevirtual #13
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [31] ldc #3
+        + String [}]
+      [33] invokevirtual #14
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [36] invokevirtual #15
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [39] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/tectus/a/a/b
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.tectus.a.a.b extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 200):
+  + Class [com/tectus/a/a/a]
+  + Class [com/tectus/a/a/b]
+  + Class [com/tectus/a/a/c]
+  + Class [java/lang/Boolean]
+  + Class [java/lang/Integer]
+  + Class [java/lang/Math]
+  + Class [java/lang/Object]
+  + Class [java/util/ArrayList]
+  + Class [java/util/HashMap]
+  + Class [java/util/Iterator]
+  + Class [java/util/List]
+  + Class [java/util/Map]
+  + Class [java/util/Random]
+  + Double [100.0]
+  + Fieldref [com/tectus/a/a/a.a I]
+  + Fieldref [com/tectus/a/a/a.b I]
+  + Fieldref [com/tectus/a/a/b.a I]
+  + Fieldref [com/tectus/a/a/b.b I]
+  + Fieldref [com/tectus/a/a/b.c I]
+  + Fieldref [com/tectus/a/a/b.d I]
+  + Fieldref [com/tectus/a/a/b.e I]
+  + Fieldref [com/tectus/a/a/b.f Z]
+  + Fieldref [com/tectus/a/a/b.g Z]
+  + Fieldref [com/tectus/a/a/b.h Ljava/util/List;]
+  + Fieldref [com/tectus/a/a/b.i Ljava/util/Map;]
+  + Methodref [com/tectus/a/a/a.<init> ()V]
+  + Methodref [com/tectus/a/a/a.<init> (II)V]
+  + Methodref [com/tectus/a/a/b.<init> (II)V]
+  + Methodref [com/tectus/a/a/b.a (II)V]
+  + Methodref [com/tectus/a/a/b.a (Lcom/tectus/a/a/c;Lcom/tectus/a/a/a;Ljava/util/List;)Ljava/lang/Boolean;]
+  + Methodref [com/tectus/a/a/b.a (Ljava/util/List;Lcom/tectus/a/a/c;)Ljava/lang/Boolean;]
+  + Methodref [com/tectus/a/a/b.b ()V]
+  + Methodref [com/tectus/a/a/c.<init> ()V]
+  + Methodref [com/tectus/a/a/c.a ()I]
+  + Methodref [com/tectus/a/a/c.a (I)V]
+  + Methodref [com/tectus/a/a/c.a (Lcom/tectus/a/a/a;)V]
+  + Methodref [com/tectus/a/a/c.a (Ljava/lang/Boolean;)V]
+  + Methodref [com/tectus/a/a/c.b (I)V]
+  + Methodref [com/tectus/a/a/c.b (Lcom/tectus/a/a/a;)V]
+  + Methodref [com/tectus/a/a/c.c ()Ljava/util/List;]
+  + Methodref [com/tectus/a/a/c.c (I)V]
+  + Methodref [com/tectus/a/a/c.c (Lcom/tectus/a/a/a;)Ljava/lang/Boolean;]
+  + Methodref [com/tectus/a/a/c.d ()I]
+  + Methodref [com/tectus/a/a/c.e ()Lcom/tectus/a/a/a;]
+  + Methodref [com/tectus/a/a/c.f ()Lcom/tectus/a/a/a;]
+  + Methodref [com/tectus/a/a/c.g ()I]
+  + Methodref [com/tectus/a/a/c.h ()V]
+  + Methodref [java/lang/Boolean.booleanValue ()Z]
+  + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+  + Methodref [java/lang/Integer.equals (Ljava/lang/Object;)Z]
+  + Methodref [java/lang/Integer.intValue ()I]
+  + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+  + Methodref [java/lang/Math.abs (I)I]
+  + Methodref [java/lang/Math.max (II)I]
+  + Methodref [java/lang/Math.round (D)J]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/util/ArrayList.<init> ()V]
+  + Methodref [java/util/ArrayList.<init> (I)V]
+  + Methodref [java/util/ArrayList.<init> (Ljava/util/Collection;)V]
+  + Methodref [java/util/HashMap.<init> ()V]
+  + Methodref [java/util/Random.<init> ()V]
+  + Methodref [java/util/Random.nextInt (I)I]
+  + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+  + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+  + InterfaceMethodref [java/util/Iterator.remove ()V]
+  + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+  + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+  + InterfaceMethodref [java/util/List.isEmpty ()Z]
+  + InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+  + InterfaceMethodref [java/util/List.remove (Ljava/lang/Object;)Z]
+  + InterfaceMethodref [java/util/List.size ()I]
+  + InterfaceMethodref [java/util/Map.containsKey (Ljava/lang/Object;)Z]
+  + InterfaceMethodref [java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object;]
+  + InterfaceMethodref [java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (I)V]
+  + NameAndType [<init> (II)V]
+  + NameAndType [<init> (Ljava/util/Collection;)V]
+  + NameAndType [a ()I]
+  + NameAndType [a (I)V]
+  + NameAndType [a (II)V]
+  + NameAndType [a (Lcom/tectus/a/a/a;)V]
+  + NameAndType [a (Lcom/tectus/a/a/c;Lcom/tectus/a/a/a;Ljava/util/List;)Ljava/lang/Boolean;]
+  + NameAndType [a (Ljava/lang/Boolean;)V]
+  + NameAndType [a (Ljava/util/List;Lcom/tectus/a/a/c;)Ljava/lang/Boolean;]
+  + NameAndType [a I]
+  + NameAndType [abs (I)I]
+  + NameAndType [add (Ljava/lang/Object;)Z]
+  + NameAndType [b ()V]
+  + NameAndType [b (I)V]
+  + NameAndType [b (Lcom/tectus/a/a/a;)V]
+  + NameAndType [b I]
+  + NameAndType [booleanValue ()Z]
+  + NameAndType [c ()Ljava/util/List;]
+  + NameAndType [c (I)V]
+  + NameAndType [c (Lcom/tectus/a/a/a;)Ljava/lang/Boolean;]
+  + NameAndType [c I]
+  + NameAndType [containsKey (Ljava/lang/Object;)Z]
+  + NameAndType [d ()I]
+  + NameAndType [d I]
+  + NameAndType [e ()Lcom/tectus/a/a/a;]
+  + NameAndType [e I]
+  + NameAndType [equals (Ljava/lang/Object;)Z]
+  + NameAndType [f ()Lcom/tectus/a/a/a;]
+  + NameAndType [f Z]
+  + NameAndType [g ()I]
+  + NameAndType [g Z]
+  + NameAndType [get (I)Ljava/lang/Object;]
+  + NameAndType [get (Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [h ()V]
+  + NameAndType [h Ljava/util/List;]
+  + NameAndType [hasNext ()Z]
+  + NameAndType [i Ljava/util/Map;]
+  + NameAndType [intValue ()I]
+  + NameAndType [isEmpty ()Z]
+  + NameAndType [iterator ()Ljava/util/Iterator;]
+  + NameAndType [max (II)I]
+  + NameAndType [next ()Ljava/lang/Object;]
+  + NameAndType [nextInt (I)I]
+  + NameAndType [put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [remove ()V]
+  + NameAndType [remove (Ljava/lang/Object;)Z]
+  + NameAndType [round (D)J]
+  + NameAndType [size ()I]
+  + NameAndType [valueOf (I)Ljava/lang/Integer;]
+  + NameAndType [valueOf (Z)Ljava/lang/Boolean;]
+  + Utf8 [()I]
+  + Utf8 [()Lcom/tectus/a/a/a;]
+  + Utf8 [()Ljava/lang/Object;]
+  + Utf8 [()Ljava/util/Iterator;]
+  + Utf8 [()Ljava/util/List;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(D)J]
+  + Utf8 [(I)I]
+  + Utf8 [(I)Ljava/lang/Integer;]
+  + Utf8 [(I)Ljava/lang/Object;]
+  + Utf8 [(I)V]
+  + Utf8 [(II)I]
+  + Utf8 [(II)V]
+  + Utf8 [(IIILjava/lang/Boolean;Ljava/lang/Boolean;)V]
+  + Utf8 [(Lcom/tectus/a/a/a;)Ljava/lang/Boolean;]
+  + Utf8 [(Lcom/tectus/a/a/a;)V]
+  + Utf8 [(Lcom/tectus/a/a/c;Lcom/tectus/a/a/a;Ljava/util/List;)Ljava/lang/Boolean;]
+  + Utf8 [(Ljava/lang/Boolean;)V]
+  + Utf8 [(Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/util/Collection;)V]
+  + Utf8 [(Ljava/util/List;Lcom/tectus/a/a/c;)Ljava/lang/Boolean;]
+  + Utf8 [(Z)Ljava/lang/Boolean;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Ljava/util/List;]
+  + Utf8 [Ljava/util/Map;]
+  + Utf8 [StackMapTable]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [abs]
+  + Utf8 [add]
+  + Utf8 [b]
+  + Utf8 [booleanValue]
+  + Utf8 [c]
+  + Utf8 [com/tectus/a/a/a]
+  + Utf8 [com/tectus/a/a/b]
+  + Utf8 [com/tectus/a/a/c]
+  + Utf8 [containsKey]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [equals]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [get]
+  + Utf8 [h]
+  + Utf8 [hasNext]
+  + Utf8 [i]
+  + Utf8 [intValue]
+  + Utf8 [isEmpty]
+  + Utf8 [iterator]
+  + Utf8 [java/lang/Boolean]
+  + Utf8 [java/lang/Integer]
+  + Utf8 [java/lang/Math]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/util/ArrayList]
+  + Utf8 [java/util/HashMap]
+  + Utf8 [java/util/Iterator]
+  + Utf8 [java/util/List]
+  + Utf8 [java/util/Map]
+  + Utf8 [java/util/Random]
+  + Utf8 [max]
+  + Utf8 [next]
+  + Utf8 [nextInt]
+  + Utf8 [put]
+  + Utf8 [remove]
+  + Utf8 [round]
+  + Utf8 [size]
+  + Utf8 [valueOf]
+
+Fields (count = 9):
+  + Field:        a I
+    Access flags: 0x2
+      = private int a
+  + Field:        b I
+    Access flags: 0x2
+      = private int b
+  + Field:        c I
+    Access flags: 0x2
+      = private int c
+  + Field:        d I
+    Access flags: 0x2
+      = private int d
+  + Field:        e I
+    Access flags: 0x2
+      = private int e
+  + Field:        f Z
+    Access flags: 0x2
+      = private boolean f
+  + Field:        g Z
+    Access flags: 0x2
+      = private boolean g
+  + Field:        h Ljava/util/List;
+    Access flags: 0x2
+      = private java.util.List h
+  + Field:        i Ljava/util/Map;
+    Access flags: 0x2
+      = private java.util.Map i
+
+Methods (count = 8):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 7, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] iconst_3
+      [2] iconst_3
+      [3] invokespecial #29
+        + Methodref [com/tectus/a/a/b.<init> (II)V]
+      [6] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       <init>(II)V
+    Access flags: 0x1
+      = public b(int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 21, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] invokespecial #57
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] iconst_0
+      [6] putfield #23
+        + Fieldref [com/tectus/a/a/b.f Z]
+      [9] aload_0 v0
+      [10] iconst_0
+      [11] putfield #24
+        + Fieldref [com/tectus/a/a/b.g Z]
+      [14] aload_0 v0
+      [15] iload_1 v1
+      [16] iload_2 v2
+      [17] invokevirtual #30
+        + Methodref [com/tectus/a/a/b.a (II)V]
+      [20] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(II)V
+    Access flags: 0x1
+      = public void a(int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 11, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #18
+        + Fieldref [com/tectus/a/a/b.a I]
+      [5] aload_0 v0
+      [6] iload_2 v2
+      [7] putfield #19
+        + Fieldref [com/tectus/a/a/b.b I]
+      [10] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(IIILjava/lang/Boolean;Ljava/lang/Boolean;)V
+    Access flags: 0x1
+      = public void a(int,int,int,java.lang.Boolean,java.lang.Boolean)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 57, locals = 6, stack = 4):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #20
+        + Fieldref [com/tectus/a/a/b.c I]
+      [5] aload_0 v0
+      [6] iload_2 v2
+      [7] putfield #21
+        + Fieldref [com/tectus/a/a/b.d I]
+      [10] aload_0 v0
+      [11] iload_3 v3
+      [12] putfield #22
+        + Fieldref [com/tectus/a/a/b.e I]
+      [15] aload_0 v0
+      [16] aload v4
+      [18] invokevirtual #49
+        + Methodref [java/lang/Boolean.booleanValue ()Z]
+      [21] putfield #23
+        + Fieldref [com/tectus/a/a/b.f Z]
+      [24] aload_0 v0
+      [25] aload v5
+      [27] invokevirtual #49
+        + Methodref [java/lang/Boolean.booleanValue ()Z]
+      [30] putfield #24
+        + Fieldref [com/tectus/a/a/b.g Z]
+      [33] aload_0 v0
+      [34] new #8
+        + Class [java/util/ArrayList]
+      [37] dup
+      [38] iload_2 v2
+      [39] invokespecial #59
+        + Methodref [java/util/ArrayList.<init> (I)V]
+      [42] putfield #25
+        + Fieldref [com/tectus/a/a/b.h Ljava/util/List;]
+      [45] aload_0 v0
+      [46] new #9
+        + Class [java/util/HashMap]
+      [49] dup
+      [50] invokespecial #61
+        + Methodref [java/util/HashMap.<init> ()V]
+      [53] putfield #26
+        + Fieldref [com/tectus/a/a/b.i Ljava/util/Map;]
+      [56] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Ljava/util/List;
+    Access flags: 0x1
+      = public java.util.List a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 372, locals = 9, stack = 8):
+      [0] new #8
+        + Class [java/util/ArrayList]
+      [3] dup
+      [4] invokespecial #58
+        + Methodref [java/util/ArrayList.<init> ()V]
+      [7] astore_1 v1
+      [8] iconst_0
+      [9] istore_2 v2
+      [10] aload_0 v0
+      [11] getfield #18
+        + Fieldref [com/tectus/a/a/b.a I]
+      [14] aload_0 v0
+      [15] getfield #19
+        + Fieldref [com/tectus/a/a/b.b I]
+      [18] imul
+      [19] istore_3 v3
+      [20] iload_2 v2
+      [21] iload_3 v3
+      [22] ificmpge +55 (target=77)
+      [25] new #1
+        + Class [com/tectus/a/a/a]
+      [28] dup
+      [29] invokespecial #27
+        + Methodref [com/tectus/a/a/a.<init> ()V]
+      [32] astore v4
+      [34] aload v4
+      [36] iload_2 v2
+      [37] aload_0 v0
+      [38] getfield #18
+        + Fieldref [com/tectus/a/a/b.a I]
+      [41] irem
+      [42] putfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [45] aload v4
+      [47] iload_2 v2
+      [48] aload v4
+      [50] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [53] isub
+      [54] aload_0 v0
+      [55] getfield #18
+        + Fieldref [com/tectus/a/a/b.a I]
+      [58] idiv
+      [59] putfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [62] aload_1 v1
+      [63] aload v4
+      [65] invokeinterface #67
+        + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [70] pop
+      [71] iinc v2, 1
+      [74] goto -54 (target=20)
+      [77] aload_0 v0
+      [78] getfield #24
+        + Fieldref [com/tectus/a/a/b.g Z]
+      [81] ifne +14 (target=95)
+      [84] aload_0 v0
+      [85] getfield #23
+        + Fieldref [com/tectus/a/a/b.f Z]
+      [88] ifne +7 (target=95)
+      [91] iconst_4
+      [92] goto +15 (target=107)
+      [95] aload_0 v0
+      [96] getfield #23
+        + Fieldref [com/tectus/a/a/b.f Z]
+      [99] ifeq +7 (target=106)
+      [102] iconst_2
+      [103] goto +4 (target=107)
+      [106] iconst_3
+      [107] istore_2 v2
+      [108] aload_0 v0
+      [109] getfield #21
+        + Fieldref [com/tectus/a/a/b.d I]
+      [112] istore_3 v3
+      [113] aload_0 v0
+      [114] getfield #20
+        + Fieldref [com/tectus/a/a/b.c I]
+      [117] istore v4
+      [119] iload_3 v3
+      [120] ifle +235 (target=355)
+      [123] iload v4
+      [125] ifle +230 (target=355)
+      [128] iload_3 v3
+      [129] iconst_1
+      [130] ificmpne +10 (target=140)
+      [133] iload v4
+      [135] istore v5
+      [137] goto +73 (target=210)
+      [140] ldc2_w #14
+        + Double [100.0]
+      [143] iload_3 v3
+      [144] iconst_1
+      [145] isub
+      [146] iload_2 v2
+      [147] imul
+      [148] i2d
+      [149] iload v4
+      [151] i2d
+      [152] ldc2_w #14
+        + Double [100.0]
+      [155] ddiv
+      [156] ddiv
+      [157] dsub
+      [158] dstore v6
+      [160] new #13
+        + Class [java/util/Random]
+      [163] dup
+      [164] invokespecial #62
+        + Methodref [java/util/Random.<init> ()V]
+      [167] iload v4
+      [169] i2d
+      [170] dload v6
+      [172] dmul
+      [173] ldc2_w #14
+        + Double [100.0]
+      [176] ddiv
+      [177] invokestatic #56
+        + Methodref [java/lang/Math.round (D)J]
+      [180] l2i
+      [181] invokevirtual #63
+        + Methodref [java/util/Random.nextInt (I)I]
+      [184] istore v5
+      [186] iload v5
+      [188] iconst_2
+      [189] irem
+      [190] ifeq +20 (target=210)
+      [193] aload_0 v0
+      [194] getfield #24
+        + Fieldref [com/tectus/a/a/b.g Z]
+      [197] ifne +13 (target=210)
+      [200] aload_0 v0
+      [201] getfield #23
+        + Fieldref [com/tectus/a/a/b.f Z]
+      [204] ifne +6 (target=210)
+      [207] iinc v5, -1
+      [210] iload v4
+      [212] iload_2 v2
+      [213] iload v5
+      [215] invokestatic #55
+        + Methodref [java/lang/Math.max (II)I]
+      [218] dup
+      [219] istore v5
+      [221] isub
+      [222] istore v4
+      [224] new #3
+        + Class [com/tectus/a/a/c]
+      [227] dup
+      [228] invokespecial #34
+        + Methodref [com/tectus/a/a/c.<init> ()V]
+      [231] astore v6
+      [233] aload v6
+      [235] iload v5
+      [237] invokevirtual #42
+        + Methodref [com/tectus/a/a/c.c (I)V]
+      [240] aload v6
+      [242] aload_0 v0
+      [243] getfield #21
+        + Fieldref [com/tectus/a/a/b.d I]
+      [246] iload_3 v3
+      [247] isub
+      [248] invokevirtual #36
+        + Methodref [com/tectus/a/a/c.a (I)V]
+      [251] aload_0 v0
+      [252] new #8
+        + Class [java/util/ArrayList]
+      [255] dup
+      [256] aload_1 v1
+      [257] invokespecial #60
+        + Methodref [java/util/ArrayList.<init> (Ljava/util/Collection;)V]
+      [260] aload v6
+      [262] invokevirtual #32
+        + Methodref [com/tectus/a/a/b.a (Ljava/util/List;Lcom/tectus/a/a/c;)Ljava/lang/Boolean;]
+      [265] invokevirtual #49
+        + Methodref [java/lang/Boolean.booleanValue ()Z]
+      [268] ifeq +87 (target=355)
+      [271] aload_0 v0
+      [272] getfield #25
+        + Fieldref [com/tectus/a/a/b.h Ljava/util/List;]
+      [275] aload v6
+      [277] invokeinterface #67
+        + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [282] pop
+      [283] aload v6
+      [285] invokevirtual #41
+        + Methodref [com/tectus/a/a/c.c ()Ljava/util/List;]
+      [288] invokeinterface #70
+        + InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+      [293] astore v7
+      [295] aload v7
+      [297] invokeinterface #64
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [302] ifeq +47 (target=349)
+      [305] aload v7
+      [307] invokeinterface #65
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [312] checkcast #1
+        + Class [com/tectus/a/a/a]
+      [315] astore v8
+      [317] aload_0 v0
+      [318] getfield #26
+        + Fieldref [com/tectus/a/a/b.i Ljava/util/Map;]
+      [321] aload v8
+      [323] aload v6
+      [325] invokevirtual #35
+        + Methodref [com/tectus/a/a/c.a ()I]
+      [328] invokestatic #53
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [331] invokeinterface #75
+        + InterfaceMethodref [java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+      [336] pop
+      [337] aload_1 v1
+      [338] aload v8
+      [340] invokeinterface #71
+        + InterfaceMethodref [java/util/List.remove (Ljava/lang/Object;)Z]
+      [345] pop
+      [346] goto -51 (target=295)
+      [349] iinc v3, -1
+      [352] goto -233 (target=119)
+      [355] aload_0 v0
+      [356] getfield #22
+        + Fieldref [com/tectus/a/a/b.e I]
+      [359] iconst_1
+      [360] ificmple +7 (target=367)
+      [363] aload_0 v0
+      [364] invokespecial #33
+        + Methodref [com/tectus/a/a/b.b ()V]
+      [367] aload_0 v0
+      [368] getfield #25
+        + Fieldref [com/tectus/a/a/b.h Ljava/util/List;]
+      [371] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 12):
+        - [20] Var: ...[a:java/util/List][i][i], Stack: (empty)
+        - [77] Var: -2, Stack: (empty)
+        - [95] Var: ..., Stack: (empty)
+        - [106] Var: ..., Stack: (empty)
+        - [107] Var: ..., Stack: [i]
+        - [119] Var: ...[i][i][i], Stack: (empty)
+        - [140] Var: ..., Stack: (empty)
+        - [210] Var: ...[i], Stack: (empty)
+        - [295] Var: ...[a:com/tectus/a/a/c][a:java/util/Iterator], Stack: (empty)
+        - [349] Var: -1, Stack: (empty)
+        - [355] Var: [a:com/tectus/a/a/b][a:java/util/List][i], Stack: 
+        - [367] Var: ..., Stack: (empty)
+  + Method:       b()V
+    Access flags: 0x2
+      = private void b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 142, locals = 5, stack = 4):
+      [0] new #8
+        + Class [java/util/ArrayList]
+      [3] dup
+      [4] aload_0 v0
+      [5] getfield #22
+        + Fieldref [com/tectus/a/a/b.e I]
+      [8] invokespecial #59
+        + Methodref [java/util/ArrayList.<init> (I)V]
+      [11] astore_1 v1
+      [12] iconst_0
+      [13] istore_2 v2
+      [14] iload_2 v2
+      [15] aload_0 v0
+      [16] getfield #22
+        + Fieldref [com/tectus/a/a/b.e I]
+      [19] ificmpge +20 (target=39)
+      [22] aload_1 v1
+      [23] iload_2 v2
+      [24] invokestatic #53
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [27] invokeinterface #67
+        + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [32] pop
+      [33] iinc v2, 1
+      [36] goto -22 (target=14)
+      [39] aload_0 v0
+      [40] getfield #25
+        + Fieldref [com/tectus/a/a/b.h Ljava/util/List;]
+      [43] invokeinterface #70
+        + InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+      [48] astore_2 v2
+      [49] aload_2 v2
+      [50] invokeinterface #64
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [55] ifeq +86 (target=141)
+      [58] aload_2 v2
+      [59] invokeinterface #65
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [64] checkcast #3
+        + Class [com/tectus/a/a/c]
+      [67] astore_3 v3
+      [68] aload_1 v1
+      [69] invokeinterface #72
+        + InterfaceMethodref [java/util/List.size ()I]
+      [74] iconst_1
+      [75] ificmple +33 (target=108)
+      [78] aload_1 v1
+      [79] new #13
+        + Class [java/util/Random]
+      [82] dup
+      [83] invokespecial #62
+        + Methodref [java/util/Random.<init> ()V]
+      [86] aload_1 v1
+      [87] invokeinterface #72
+        + InterfaceMethodref [java/util/List.size ()I]
+      [92] iconst_1
+      [93] isub
+      [94] invokevirtual #63
+        + Methodref [java/util/Random.nextInt (I)I]
+      [97] invokeinterface #68
+        + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [102] checkcast #5
+        + Class [java/lang/Integer]
+      [105] goto +13 (target=118)
+      [108] aload_1 v1
+      [109] iconst_0
+      [110] invokeinterface #68
+        + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [115] checkcast #5
+        + Class [java/lang/Integer]
+      [118] astore v4
+      [120] aload_3 v3
+      [121] aload v4
+      [123] invokevirtual #52
+        + Methodref [java/lang/Integer.intValue ()I]
+      [126] invokevirtual #39
+        + Methodref [com/tectus/a/a/c.b (I)V]
+      [129] aload_1 v1
+      [130] aload v4
+      [132] invokeinterface #71
+        + InterfaceMethodref [java/util/List.remove (Ljava/lang/Object;)Z]
+      [137] pop
+      [138] goto -89 (target=49)
+      [141] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 6):
+        - [14] Var: ...[a:java/util/List][i], Stack: (empty)
+        - [39] Var: -1, Stack: (empty)
+        - [49] Var: ...[a:java/util/Iterator], Stack: (empty)
+        - [108] Var: ...[a:com/tectus/a/a/c], Stack: (empty)
+        - [118] Var: ..., Stack: [a:java/lang/Integer]
+        - [141] Var: -2, Stack: (empty)
+  + Method:       a(Ljava/util/List;Lcom/tectus/a/a/c;)Ljava/lang/Boolean;
+    Access flags: 0x4
+      = protected java.lang.Boolean a(java.util.List,com.tectus.a.a.c)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 144, locals = 4, stack = 4):
+      [0] aload_1 v1
+      [1] invokeinterface #69
+        + InterfaceMethodref [java/util/List.isEmpty ()Z]
+      [6] ifeq +8 (target=14)
+      [9] iconst_0
+      [10] invokestatic #50
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [13] areturn
+      [14] aload_1 v1
+      [15] invokeinterface #72
+        + InterfaceMethodref [java/util/List.size ()I]
+      [20] aload_2 v2
+      [21] invokevirtual #44
+        + Methodref [com/tectus/a/a/c.d ()I]
+      [24] ificmplt +111 (target=135)
+      [27] aload_1 v1
+      [28] invokeinterface #72
+        + InterfaceMethodref [java/util/List.size ()I]
+      [33] iconst_1
+      [34] ificmple +33 (target=67)
+      [37] aload_1 v1
+      [38] new #13
+        + Class [java/util/Random]
+      [41] dup
+      [42] invokespecial #62
+        + Methodref [java/util/Random.<init> ()V]
+      [45] aload_1 v1
+      [46] invokeinterface #72
+        + InterfaceMethodref [java/util/List.size ()I]
+      [51] iconst_1
+      [52] isub
+      [53] invokevirtual #63
+        + Methodref [java/util/Random.nextInt (I)I]
+      [56] invokeinterface #68
+        + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [61] checkcast #1
+        + Class [com/tectus/a/a/a]
+      [64] goto +13 (target=77)
+      [67] aload_1 v1
+      [68] iconst_0
+      [69] invokeinterface #68
+        + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [74] checkcast #1
+        + Class [com/tectus/a/a/a]
+      [77] astore_3 v3
+      [78] aload_0 v0
+      [79] getfield #26
+        + Fieldref [com/tectus/a/a/b.i Ljava/util/Map;]
+      [82] aload_3 v3
+      [83] invokeinterface #73
+        + InterfaceMethodref [java/util/Map.containsKey (Ljava/lang/Object;)Z]
+      [88] ifeq +14 (target=102)
+      [91] aload_1 v1
+      [92] aload_3 v3
+      [93] invokeinterface #71
+        + InterfaceMethodref [java/util/List.remove (Ljava/lang/Object;)Z]
+      [98] pop
+      [99] goto -85 (target=14)
+      [102] aload_0 v0
+      [103] aload_2 v2
+      [104] aload_3 v3
+      [105] aload_1 v1
+      [106] invokevirtual #31
+        + Methodref [com/tectus/a/a/b.a (Lcom/tectus/a/a/c;Lcom/tectus/a/a/a;Ljava/util/List;)Ljava/lang/Boolean;]
+      [109] invokevirtual #49
+        + Methodref [java/lang/Boolean.booleanValue ()Z]
+      [112] ifeq +8 (target=120)
+      [115] iconst_1
+      [116] invokestatic #50
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [119] areturn
+      [120] aload_2 v2
+      [121] invokevirtual #48
+        + Methodref [com/tectus/a/a/c.h ()V]
+      [124] aload_1 v1
+      [125] aload_3 v3
+      [126] invokeinterface #71
+        + InterfaceMethodref [java/util/List.remove (Ljava/lang/Object;)Z]
+      [131] pop
+      [132] goto -118 (target=14)
+      [135] aload_2 v2
+      [136] invokevirtual #48
+        + Methodref [com/tectus/a/a/c.h ()V]
+      [139] iconst_0
+      [140] invokestatic #50
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [143] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 6):
+        - [14] Var: ..., Stack: (empty)
+        - [67] Var: ..., Stack: (empty)
+        - [77] Var: ..., Stack: [a:com/tectus/a/a/a]
+        - [102] Var: ...[a:com/tectus/a/a/a], Stack: (empty)
+        - [120] Var: ..., Stack: (empty)
+        - [135] Var: -1, Stack: (empty)
+  + Method:       a(Lcom/tectus/a/a/c;Lcom/tectus/a/a/a;Ljava/util/List;)Ljava/lang/Boolean;
+    Access flags: 0x4
+      = protected java.lang.Boolean a(com.tectus.a.a.c,com.tectus.a.a.a,java.util.List)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1094, locals = 11, stack = 6):
+      [0] aload_1 v1
+      [1] invokevirtual #47
+        + Methodref [com/tectus/a/a/c.g ()I]
+      [4] aload_1 v1
+      [5] invokevirtual #44
+        + Methodref [com/tectus/a/a/c.d ()I]
+      [8] ificmpne +121 (target=129)
+      [11] aload_0 v0
+      [12] getfield #23
+        + Fieldref [com/tectus/a/a/b.f Z]
+      [15] ifne +109 (target=124)
+      [18] aload_1 v1
+      [19] invokevirtual #45
+        + Methodref [com/tectus/a/a/c.e ()Lcom/tectus/a/a/a;]
+      [22] astore v4
+      [24] aload_1 v1
+      [25] invokevirtual #46
+        + Methodref [com/tectus/a/a/c.f ()Lcom/tectus/a/a/a;]
+      [28] astore v5
+      [30] aload_0 v0
+      [31] getfield #24
+        + Fieldref [com/tectus/a/a/b.g Z]
+      [34] ifeq +44 (target=78)
+      [37] aload v4
+      [39] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [42] aload v5
+      [44] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [47] isub
+      [48] invokestatic #54
+        + Methodref [java/lang/Math.abs (I)I]
+      [51] iconst_1
+      [52] ificmpgt +21 (target=73)
+      [55] aload v4
+      [57] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [60] aload v5
+      [62] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [65] isub
+      [66] invokestatic #54
+        + Methodref [java/lang/Math.abs (I)I]
+      [69] iconst_1
+      [70] ificmple +46 (target=116)
+      [73] iconst_0
+      [74] invokestatic #50
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [77] areturn
+      [78] aload v4
+      [80] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [83] aload v5
+      [85] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [88] isub
+      [89] invokestatic #54
+        + Methodref [java/lang/Math.abs (I)I]
+      [92] aload v4
+      [94] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [97] aload v5
+      [99] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [102] isub
+      [103] invokestatic #54
+        + Methodref [java/lang/Math.abs (I)I]
+      [106] iadd
+      [107] iconst_1
+      [108] ificmple +8 (target=116)
+      [111] iconst_0
+      [112] invokestatic #50
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [115] areturn
+      [116] aload_1 v1
+      [117] iconst_1
+      [118] invokestatic #50
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [121] invokevirtual #38
+        + Methodref [com/tectus/a/a/c.a (Ljava/lang/Boolean;)V]
+      [124] iconst_1
+      [125] invokestatic #50
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [128] areturn
+      [129] aload_3 v3
+      [130] invokeinterface #69
+        + InterfaceMethodref [java/util/List.isEmpty ()Z]
+      [135] ifeq +8 (target=143)
+      [138] iconst_0
+      [139] invokestatic #50
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [142] areturn
+      [143] aload_0 v0
+      [144] getfield #23
+        + Fieldref [com/tectus/a/a/b.f Z]
+      [147] ifne +103 (target=250)
+      [150] aload_1 v1
+      [151] invokevirtual #45
+        + Methodref [com/tectus/a/a/c.e ()Lcom/tectus/a/a/a;]
+      [154] astore v4
+      [156] aload v4
+      [158] ifnull +92 (target=250)
+      [161] aload v4
+      [163] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [166] aload_2 v2
+      [167] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [170] isub
+      [171] invokestatic #54
+        + Methodref [java/lang/Math.abs (I)I]
+      [174] istore v5
+      [176] aload v4
+      [178] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [181] aload_2 v2
+      [182] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [185] isub
+      [186] invokestatic #54
+        + Methodref [java/lang/Math.abs (I)I]
+      [189] istore v6
+      [191] aload_0 v0
+      [192] getfield #24
+        + Fieldref [com/tectus/a/a/b.g Z]
+      [195] ifeq +15 (target=210)
+      [198] iload v5
+      [200] iload v6
+      [202] invokestatic #55
+        + Methodref [java/lang/Math.max (II)I]
+      [205] iconst_1
+      [206] isub
+      [207] goto +10 (target=217)
+      [210] iload v5
+      [212] iload v6
+      [214] iadd
+      [215] iconst_1
+      [216] isub
+      [217] istore v7
+      [219] aload_1 v1
+      [220] invokevirtual #44
+        + Methodref [com/tectus/a/a/c.d ()I]
+      [223] aload_1 v1
+      [224] invokevirtual #47
+        + Methodref [com/tectus/a/a/c.g ()I]
+      [227] isub
+      [228] istore v8
+      [230] iload v7
+      [232] iload v8
+      [234] ificmplt +16 (target=250)
+      [237] aload_3 v3
+      [238] aload_2 v2
+      [239] invokeinterface #71
+        + InterfaceMethodref [java/util/List.remove (Ljava/lang/Object;)Z]
+      [244] pop
+      [245] iconst_0
+      [246] invokestatic #50
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [249] areturn
+      [250] new #8
+        + Class [java/util/ArrayList]
+      [253] dup
+      [254] invokespecial #58
+        + Methodref [java/util/ArrayList.<init> ()V]
+      [257] astore v4
+      [259] aload v4
+      [261] new #1
+        + Class [com/tectus/a/a/a]
+      [264] dup
+      [265] aload_2 v2
+      [266] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [269] iconst_1
+      [270] iadd
+      [271] aload_2 v2
+      [272] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [275] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [278] invokeinterface #67
+        + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [283] pop
+      [284] aload v4
+      [286] new #1
+        + Class [com/tectus/a/a/a]
+      [289] dup
+      [290] aload_2 v2
+      [291] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [294] aload_2 v2
+      [295] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [298] iconst_1
+      [299] iadd
+      [300] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [303] invokeinterface #67
+        + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [308] pop
+      [309] aload v4
+      [311] new #1
+        + Class [com/tectus/a/a/a]
+      [314] dup
+      [315] aload_2 v2
+      [316] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [319] iconst_1
+      [320] isub
+      [321] aload_2 v2
+      [322] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [325] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [328] invokeinterface #67
+        + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [333] pop
+      [334] aload v4
+      [336] new #1
+        + Class [com/tectus/a/a/a]
+      [339] dup
+      [340] aload_2 v2
+      [341] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [344] aload_2 v2
+      [345] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [348] iconst_1
+      [349] isub
+      [350] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [353] invokeinterface #67
+        + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [358] pop
+      [359] aload_0 v0
+      [360] getfield #24
+        + Fieldref [com/tectus/a/a/b.g Z]
+      [363] ifeq +111 (target=474)
+      [366] aload v4
+      [368] new #1
+        + Class [com/tectus/a/a/a]
+      [371] dup
+      [372] aload_2 v2
+      [373] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [376] iconst_1
+      [377] iadd
+      [378] aload_2 v2
+      [379] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [382] iconst_1
+      [383] iadd
+      [384] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [387] invokeinterface #67
+        + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [392] pop
+      [393] aload v4
+      [395] new #1
+        + Class [com/tectus/a/a/a]
+      [398] dup
+      [399] aload_2 v2
+      [400] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [403] iconst_1
+      [404] isub
+      [405] aload_2 v2
+      [406] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [409] iconst_1
+      [410] iadd
+      [411] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [414] invokeinterface #67
+        + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [419] pop
+      [420] aload v4
+      [422] new #1
+        + Class [com/tectus/a/a/a]
+      [425] dup
+      [426] aload_2 v2
+      [427] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [430] iconst_1
+      [431] isub
+      [432] aload_2 v2
+      [433] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [436] iconst_1
+      [437] isub
+      [438] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [441] invokeinterface #67
+        + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [446] pop
+      [447] aload v4
+      [449] new #1
+        + Class [com/tectus/a/a/a]
+      [452] dup
+      [453] aload_2 v2
+      [454] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [457] iconst_1
+      [458] iadd
+      [459] aload_2 v2
+      [460] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [463] iconst_1
+      [464] isub
+      [465] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [468] invokeinterface #67
+        + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [473] pop
+      [474] aload v4
+      [476] invokeinterface #70
+        + InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+      [481] astore v5
+      [483] aload v5
+      [485] invokeinterface #64
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [490] ifeq +483 (target=973)
+      [493] aload v5
+      [495] invokeinterface #65
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [500] checkcast #1
+        + Class [com/tectus/a/a/a]
+      [503] astore v6
+      [505] aload v6
+      [507] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [510] iflt +35 (target=545)
+      [513] aload v6
+      [515] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [518] aload_0 v0
+      [519] getfield #18
+        + Fieldref [com/tectus/a/a/b.a I]
+      [522] ificmpge +23 (target=545)
+      [525] aload v6
+      [527] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [530] iflt +15 (target=545)
+      [533] aload v6
+      [535] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [538] aload_0 v0
+      [539] getfield #19
+        + Fieldref [com/tectus/a/a/b.b I]
+      [542] ificmplt +13 (target=555)
+      [545] aload v5
+      [547] invokeinterface #66
+        + InterfaceMethodref [java/util/Iterator.remove ()V]
+      [552] goto -69 (target=483)
+      [555] aload_1 v1
+      [556] aload v6
+      [558] invokevirtual #43
+        + Methodref [com/tectus/a/a/c.c (Lcom/tectus/a/a/a;)Ljava/lang/Boolean;]
+      [561] invokevirtual #49
+        + Methodref [java/lang/Boolean.booleanValue ()Z]
+      [564] ifne +17 (target=581)
+      [567] aload_0 v0
+      [568] getfield #26
+        + Fieldref [com/tectus/a/a/b.i Ljava/util/Map;]
+      [571] aload v6
+      [573] invokeinterface #73
+        + InterfaceMethodref [java/util/Map.containsKey (Ljava/lang/Object;)Z]
+      [578] ifeq +13 (target=591)
+      [581] aload v5
+      [583] invokeinterface #66
+        + InterfaceMethodref [java/util/Iterator.remove ()V]
+      [588] goto -105 (target=483)
+      [591] aload_0 v0
+      [592] getfield #24
+        + Fieldref [com/tectus/a/a/b.g Z]
+      [595] ifeq +375 (target=970)
+      [598] aconst_null
+      [599] astore v7
+      [601] aconst_null
+      [602] astore v8
+      [604] aload v6
+      [606] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [609] aload_2 v2
+      [610] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [613] isub
+      [614] iconst_1
+      [615] ificmpne +58 (target=673)
+      [618] aload v6
+      [620] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [623] aload_2 v2
+      [624] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [627] isub
+      [628] iconst_1
+      [629] ificmpne +44 (target=673)
+      [632] new #1
+        + Class [com/tectus/a/a/a]
+      [635] dup
+      [636] aload_2 v2
+      [637] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [640] iconst_1
+      [641] iadd
+      [642] aload_2 v2
+      [643] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [646] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [649] astore v7
+      [651] new #1
+        + Class [com/tectus/a/a/a]
+      [654] dup
+      [655] aload_2 v2
+      [656] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [659] aload_2 v2
+      [660] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [663] iconst_1
+      [664] iadd
+      [665] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [668] astore v8
+      [670] goto +207 (target=877)
+      [673] aload v6
+      [675] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [678] aload_2 v2
+      [679] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [682] isub
+      [683] iconst_m1
+      [684] ificmpne +58 (target=742)
+      [687] aload v6
+      [689] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [692] aload_2 v2
+      [693] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [696] isub
+      [697] iconst_1
+      [698] ificmpne +44 (target=742)
+      [701] new #1
+        + Class [com/tectus/a/a/a]
+      [704] dup
+      [705] aload_2 v2
+      [706] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [709] aload_2 v2
+      [710] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [713] iconst_1
+      [714] iadd
+      [715] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [718] astore v7
+      [720] new #1
+        + Class [com/tectus/a/a/a]
+      [723] dup
+      [724] aload_2 v2
+      [725] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [728] iconst_1
+      [729] isub
+      [730] aload_2 v2
+      [731] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [734] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [737] astore v8
+      [739] goto +138 (target=877)
+      [742] aload v6
+      [744] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [747] aload_2 v2
+      [748] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [751] isub
+      [752] iconst_m1
+      [753] ificmpne +58 (target=811)
+      [756] aload v6
+      [758] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [761] aload_2 v2
+      [762] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [765] isub
+      [766] iconst_m1
+      [767] ificmpne +44 (target=811)
+      [770] new #1
+        + Class [com/tectus/a/a/a]
+      [773] dup
+      [774] aload_2 v2
+      [775] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [778] iconst_1
+      [779] isub
+      [780] aload_2 v2
+      [781] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [784] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [787] astore v7
+      [789] new #1
+        + Class [com/tectus/a/a/a]
+      [792] dup
+      [793] aload_2 v2
+      [794] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [797] aload_2 v2
+      [798] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [801] iconst_1
+      [802] isub
+      [803] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [806] astore v8
+      [808] goto +69 (target=877)
+      [811] aload v6
+      [813] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [816] aload_2 v2
+      [817] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [820] isub
+      [821] iconst_1
+      [822] ificmpne +55 (target=877)
+      [825] aload v6
+      [827] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [830] aload_2 v2
+      [831] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [834] isub
+      [835] iconst_m1
+      [836] ificmpne +41 (target=877)
+      [839] new #1
+        + Class [com/tectus/a/a/a]
+      [842] dup
+      [843] aload_2 v2
+      [844] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [847] aload_2 v2
+      [848] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [851] iconst_1
+      [852] isub
+      [853] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [856] astore v7
+      [858] new #1
+        + Class [com/tectus/a/a/a]
+      [861] dup
+      [862] aload_2 v2
+      [863] getfield #16
+        + Fieldref [com/tectus/a/a/a.a I]
+      [866] iconst_1
+      [867] iadd
+      [868] aload_2 v2
+      [869] getfield #17
+        + Fieldref [com/tectus/a/a/a.b I]
+      [872] invokespecial #28
+        + Methodref [com/tectus/a/a/a.<init> (II)V]
+      [875] astore v8
+      [877] aload v7
+      [879] ifnull +91 (target=970)
+      [882] aload_1 v1
+      [883] aload v7
+      [885] invokevirtual #43
+        + Methodref [com/tectus/a/a/c.c (Lcom/tectus/a/a/a;)Ljava/lang/Boolean;]
+      [888] invokevirtual #49
+        + Methodref [java/lang/Boolean.booleanValue ()Z]
+      [891] ifne +15 (target=906)
+      [894] aload_1 v1
+      [895] aload v8
+      [897] invokevirtual #43
+        + Methodref [com/tectus/a/a/c.c (Lcom/tectus/a/a/a;)Ljava/lang/Boolean;]
+      [900] invokevirtual #49
+        + Methodref [java/lang/Boolean.booleanValue ()Z]
+      [903] ifeq +13 (target=916)
+      [906] aload v5
+      [908] invokeinterface #66
+        + InterfaceMethodref [java/util/Iterator.remove ()V]
+      [913] goto -430 (target=483)
+      [916] aload_0 v0
+      [917] getfield #26
+        + Fieldref [com/tectus/a/a/b.i Ljava/util/Map;]
+      [920] aload v7
+      [922] invokeinterface #74
+        + InterfaceMethodref [java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object;]
+      [927] checkcast #5
+        + Class [java/lang/Integer]
+      [930] astore v9
+      [932] aload_0 v0
+      [933] getfield #26
+        + Fieldref [com/tectus/a/a/b.i Ljava/util/Map;]
+      [936] aload v8
+      [938] invokeinterface #74
+        + InterfaceMethodref [java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object;]
+      [943] checkcast #5
+        + Class [java/lang/Integer]
+      [946] astore v10
+      [948] aload v9
+      [950] ifnull +20 (target=970)
+      [953] aload v9
+      [955] aload v10
+      [957] invokevirtual #51
+        + Methodref [java/lang/Integer.equals (Ljava/lang/Object;)Z]
+      [960] ifeq +10 (target=970)
+      [963] aload v5
+      [965] invokeinterface #66
+        + InterfaceMethodref [java/util/Iterator.remove ()V]
+      [970] goto -487 (target=483)
+      [973] aload v4
+      [975] invokeinterface #72
+        + InterfaceMethodref [java/util/List.size ()I]
+      [980] ifle +109 (target=1089)
+      [983] aload v4
+      [985] invokeinterface #72
+        + InterfaceMethodref [java/util/List.size ()I]
+      [990] iconst_1
+      [991] ificmple +35 (target=1026)
+      [994] aload v4
+      [996] new #13
+        + Class [java/util/Random]
+      [999] dup
+      [1000] invokespecial #62
+        + Methodref [java/util/Random.<init> ()V]
+      [1003] aload v4
+      [1005] invokeinterface #72
+        + InterfaceMethodref [java/util/List.size ()I]
+      [1010] iconst_1
+      [1011] isub
+      [1012] invokevirtual #63
+        + Methodref [java/util/Random.nextInt (I)I]
+      [1015] invokeinterface #68
+        + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [1020] checkcast #1
+        + Class [com/tectus/a/a/a]
+      [1023] goto +14 (target=1037)
+      [1026] aload v4
+      [1028] iconst_0
+      [1029] invokeinterface #68
+        + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [1034] checkcast #1
+        + Class [com/tectus/a/a/a]
+      [1037] astore v5
+      [1039] aload_1 v1
+      [1040] aload_2 v2
+      [1041] invokevirtual #37
+        + Methodref [com/tectus/a/a/c.a (Lcom/tectus/a/a/a;)V]
+      [1044] aload_0 v0
+      [1045] aload_1 v1
+      [1046] aload v5
+      [1048] aload_3 v3
+      [1049] invokevirtual #31
+        + Methodref [com/tectus/a/a/b.a (Lcom/tectus/a/a/c;Lcom/tectus/a/a/a;Ljava/util/List;)Ljava/lang/Boolean;]
+      [1052] invokevirtual #49
+        + Methodref [java/lang/Boolean.booleanValue ()Z]
+      [1055] ifne +29 (target=1084)
+      [1058] aload_3 v3
+      [1059] aload_2 v2
+      [1060] invokeinterface #71
+        + InterfaceMethodref [java/util/List.remove (Ljava/lang/Object;)Z]
+      [1065] pop
+      [1066] aload_1 v1
+      [1067] aload_2 v2
+      [1068] invokevirtual #40
+        + Methodref [com/tectus/a/a/c.b (Lcom/tectus/a/a/a;)V]
+      [1071] aload v4
+      [1073] aload v5
+      [1075] invokeinterface #71
+        + InterfaceMethodref [java/util/List.remove (Ljava/lang/Object;)Z]
+      [1080] pop
+      [1081] goto -108 (target=973)
+      [1084] iconst_1
+      [1085] invokestatic #50
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [1088] areturn
+      [1089] iconst_0
+      [1090] invokestatic #50
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [1093] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 27):
+        - [73] Var: ...[a:com/tectus/a/a/a][a:com/tectus/a/a/a], Stack: (empty)
+        - [78] Var: ..., Stack: (empty)
+        - [116] Var: ..., Stack: (empty)
+        - [124] Var: -2, Stack: (empty)
+        - [129] Var: ..., Stack: (empty)
+        - [143] Var: ..., Stack: (empty)
+        - [210] Var: ...[a:com/tectus/a/a/a][i][i], Stack: (empty)
+        - [217] Var: ..., Stack: [i]
+        - [250] Var: -3, Stack: (empty)
+        - [474] Var: ...[a:java/util/List], Stack: (empty)
+        - [483] Var: ...[a:java/util/Iterator], Stack: (empty)
+        - [545] Var: ...[a:com/tectus/a/a/a], Stack: (empty)
+        - [555] Var: ..., Stack: (empty)
+        - [581] Var: ..., Stack: (empty)
+        - [591] Var: ..., Stack: (empty)
+        - [673] Var: ...[a:com/tectus/a/a/a][a:com/tectus/a/a/a], Stack: (empty)
+        - [742] Var: ..., Stack: (empty)
+        - [811] Var: ..., Stack: (empty)
+        - [877] Var: ..., Stack: (empty)
+        - [906] Var: ..., Stack: (empty)
+        - [916] Var: ..., Stack: (empty)
+        - [970] Var: -3, Stack: (empty)
+        - [973] Var: -1, Stack: (empty)
+        - [1026] Var: ..., Stack: (empty)
+        - [1037] Var: ..., Stack: [a:com/tectus/a/a/a]
+        - [1084] Var: ...[a:com/tectus/a/a/a], Stack: (empty)
+        - [1089] Var: -1, Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/tectus/a/a/c
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.tectus.a.a.c extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 129):
+  + String []
+  + String [ ]
+  + String [ ]]
+  + String [ closed,]
+  + String [ open,]
+  + String [ size: ]
+  + String [[ ]
+  + Class [com/tectus/a/a/a]
+  + Class [com/tectus/a/a/c]
+  + Class [java/lang/Boolean]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Class [java/lang/StringBuilder]
+  + Class [java/util/Iterator]
+  + Class [java/util/LinkedList]
+  + Class [java/util/List]
+  + Fieldref [com/tectus/a/a/c.a I]
+  + Fieldref [com/tectus/a/a/c.b I]
+  + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+  + Fieldref [com/tectus/a/a/c.d Ljava/lang/Boolean;]
+  + Fieldref [com/tectus/a/a/c.e I]
+  + Methodref [com/tectus/a/a/c.a (Ljava/lang/Boolean;)V]
+  + Methodref [com/tectus/a/a/c.g ()I]
+  + Methodref [java/lang/Boolean.booleanValue ()Z]
+  + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/lang/Object.toString ()Ljava/lang/String;]
+  + Methodref [java/lang/StringBuilder.<init> ()V]
+  + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + Methodref [java/util/LinkedList.<init> ()V]
+  + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+  + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+  + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+  + InterfaceMethodref [java/util/List.clear ()V]
+  + InterfaceMethodref [java/util/List.contains (Ljava/lang/Object;)Z]
+  + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+  + InterfaceMethodref [java/util/List.isEmpty ()Z]
+  + InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+  + InterfaceMethodref [java/util/List.remove (Ljava/lang/Object;)Z]
+  + InterfaceMethodref [java/util/List.size ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Ljava/lang/Boolean;)V]
+  + NameAndType [a I]
+  + NameAndType [add (Ljava/lang/Object;)Z]
+  + NameAndType [append (I)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b I]
+  + NameAndType [booleanValue ()Z]
+  + NameAndType [c Ljava/util/List;]
+  + NameAndType [clear ()V]
+  + NameAndType [contains (Ljava/lang/Object;)Z]
+  + NameAndType [d Ljava/lang/Boolean;]
+  + NameAndType [e I]
+  + NameAndType [g ()I]
+  + NameAndType [get (I)Ljava/lang/Object;]
+  + NameAndType [hasNext ()Z]
+  + NameAndType [isEmpty ()Z]
+  + NameAndType [iterator ()Ljava/util/Iterator;]
+  + NameAndType [next ()Ljava/lang/Object;]
+  + NameAndType [remove (Ljava/lang/Object;)Z]
+  + NameAndType [size ()I]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [valueOf (Z)Ljava/lang/Boolean;]
+  + Utf8 []
+  + Utf8 [ ]
+  + Utf8 [ ]]
+  + Utf8 [ closed,]
+  + Utf8 [ open,]
+  + Utf8 [ size: ]
+  + Utf8 [()I]
+  + Utf8 [()Lcom/tectus/a/a/a;]
+  + Utf8 [()Ljava/lang/Boolean;]
+  + Utf8 [()Ljava/lang/Object;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()Ljava/util/Iterator;]
+  + Utf8 [()Ljava/util/List;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)Ljava/lang/Object;]
+  + Utf8 [(I)Ljava/lang/StringBuilder;]
+  + Utf8 [(I)V]
+  + Utf8 [(Lcom/tectus/a/a/a;)Ljava/lang/Boolean;]
+  + Utf8 [(Lcom/tectus/a/a/a;)V]
+  + Utf8 [(Ljava/lang/Boolean;)V]
+  + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Z)Ljava/lang/Boolean;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Ljava/lang/Boolean;]
+  + Utf8 [Ljava/util/List;]
+  + Utf8 [StackMapTable]
+  + Utf8 [[ ]
+  + Utf8 [a]
+  + Utf8 [add]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [booleanValue]
+  + Utf8 [c]
+  + Utf8 [clear]
+  + Utf8 [com/tectus/a/a/a]
+  + Utf8 [com/tectus/a/a/c]
+  + Utf8 [contains]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [get]
+  + Utf8 [h]
+  + Utf8 [hasNext]
+  + Utf8 [i]
+  + Utf8 [isEmpty]
+  + Utf8 [iterator]
+  + Utf8 [java/lang/Boolean]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/util/Iterator]
+  + Utf8 [java/util/LinkedList]
+  + Utf8 [java/util/List]
+  + Utf8 [next]
+  + Utf8 [remove]
+  + Utf8 [size]
+  + Utf8 [toString]
+  + Utf8 [valueOf]
+
+Fields (count = 5):
+  + Field:        a I
+    Access flags: 0x2
+      = private int a
+  + Field:        b I
+    Access flags: 0x2
+      = private int b
+  + Field:        c Ljava/util/List;
+    Access flags: 0x2
+      = private java.util.List c
+  + Field:        d Ljava/lang/Boolean;
+    Access flags: 0x2
+      = private java.lang.Boolean d
+  + Field:        e I
+    Access flags: 0x2
+      = private int e
+
+Methods (count = 18):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 34, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] invokespecial #26
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] iconst_m1
+      [6] putfield #17
+        + Fieldref [com/tectus/a/a/c.a I]
+      [9] aload_0 v0
+      [10] iconst_0
+      [11] putfield #18
+        + Fieldref [com/tectus/a/a/c.b I]
+      [14] aload_0 v0
+      [15] new #15
+        + Class [java/util/LinkedList]
+      [18] dup
+      [19] invokespecial #32
+        + Methodref [java/util/LinkedList.<init> ()V]
+      [22] putfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [25] aload_0 v0
+      [26] iconst_0
+      [27] invokestatic #25
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [30] putfield #20
+        + Fieldref [com/tectus/a/a/c.d Ljava/lang/Boolean;]
+      [33] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()I
+    Access flags: 0x1
+      = public int a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #17
+        + Fieldref [com/tectus/a/a/c.a I]
+      [4] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(I)V
+    Access flags: 0x1
+      = public void a(int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #17
+        + Fieldref [com/tectus/a/a/c.a I]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()I
+    Access flags: 0x1
+      = public int b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #18
+        + Fieldref [com/tectus/a/a/c.b I]
+      [4] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(I)V
+    Access flags: 0x1
+      = public void b(int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #18
+        + Fieldref [com/tectus/a/a/c.b I]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c()Ljava/util/List;
+    Access flags: 0x1
+      = public java.util.List c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       d()I
+    Access flags: 0x1
+      = public int d()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #21
+        + Fieldref [com/tectus/a/a/c.e I]
+      [4] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c(I)V
+    Access flags: 0x1
+      = public void c(int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #21
+        + Fieldref [com/tectus/a/a/c.e I]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       e()Lcom/tectus/a/a/a;
+    Access flags: 0x1
+      = public com.tectus.a.a.a e()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 30, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [4] invokeinterface #39
+        + InterfaceMethodref [java/util/List.isEmpty ()Z]
+      [9] ifeq +7 (target=16)
+      [12] aconst_null
+      [13] goto +16 (target=29)
+      [16] aload_0 v0
+      [17] getfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [20] iconst_0
+      [21] invokeinterface #38
+        + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [26] checkcast #8
+        + Class [com/tectus/a/a/a]
+      [29] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [16] Var: ..., Stack: (empty)
+        - [29] Var: ..., Stack: [a:com/tectus/a/a/a]
+  + Method:       f()Lcom/tectus/a/a/a;
+    Access flags: 0x1
+      = public com.tectus.a.a.a f()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 40, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [4] invokeinterface #39
+        + InterfaceMethodref [java/util/List.isEmpty ()Z]
+      [9] ifeq +7 (target=16)
+      [12] aconst_null
+      [13] goto +26 (target=39)
+      [16] aload_0 v0
+      [17] getfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [20] aload_0 v0
+      [21] getfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [24] invokeinterface #42
+        + InterfaceMethodref [java/util/List.size ()I]
+      [29] iconst_1
+      [30] isub
+      [31] invokeinterface #38
+        + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [36] checkcast #8
+        + Class [com/tectus/a/a/a]
+      [39] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [16] Var: ..., Stack: (empty)
+        - [39] Var: ..., Stack: [a:com/tectus/a/a/a]
+  + Method:       a(Lcom/tectus/a/a/a;)V
+    Access flags: 0x1
+      = public void a(com.tectus.a.a.a)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [4] aload_1 v1
+      [5] invokeinterface #35
+        + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [10] pop
+      [11] aload_0 v0
+      [12] iconst_0
+      [13] invokestatic #25
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [16] invokevirtual #22
+        + Methodref [com/tectus/a/a/c.a (Ljava/lang/Boolean;)V]
+      [19] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Lcom/tectus/a/a/a;)V
+    Access flags: 0x1
+      = public void b(com.tectus.a.a.a)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [4] aload_1 v1
+      [5] invokeinterface #41
+        + InterfaceMethodref [java/util/List.remove (Ljava/lang/Object;)Z]
+      [10] pop
+      [11] aload_0 v0
+      [12] iconst_0
+      [13] invokestatic #25
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [16] invokevirtual #22
+        + Methodref [com/tectus/a/a/c.a (Ljava/lang/Boolean;)V]
+      [19] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c(Lcom/tectus/a/a/a;)Ljava/lang/Boolean;
+    Access flags: 0x1
+      = public java.lang.Boolean c(com.tectus.a.a.a)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 14, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [4] aload_1 v1
+      [5] invokeinterface #37
+        + InterfaceMethodref [java/util/List.contains (Ljava/lang/Object;)Z]
+      [10] invokestatic #25
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [13] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       g()I
+    Access flags: 0x1
+      = public int g()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [4] invokeinterface #42
+        + InterfaceMethodref [java/util/List.size ()I]
+      [9] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/Boolean;)V
+    Access flags: 0x1
+      = public void a(java.lang.Boolean)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #20
+        + Fieldref [com/tectus/a/a/c.d Ljava/lang/Boolean;]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       h()V
+    Access flags: 0x1
+      = public void h()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 18, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [4] invokeinterface #36
+        + InterfaceMethodref [java/util/List.clear ()V]
+      [9] aload_0 v0
+      [10] iconst_0
+      [11] invokestatic #25
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [14] invokevirtual #22
+        + Methodref [com/tectus/a/a/c.a (Ljava/lang/Boolean;)V]
+      [17] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       i()Ljava/lang/Boolean;
+    Access flags: 0x1
+      = public java.lang.Boolean i()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #20
+        + Fieldref [com/tectus/a/a/c.d Ljava/lang/Boolean;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       toString()Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String toString()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 128, locals = 3, stack = 2):
+      [0] ldc #1
+        + String []
+      [2] astore_1 v1
+      [3] aload_0 v0
+      [4] getfield #19
+        + Fieldref [com/tectus/a/a/c.c Ljava/util/List;]
+      [7] invokeinterface #40
+        + InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+      [12] astore_2 v2
+      [13] aload_2 v2
+      [14] invokeinterface #33
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [19] ifeq +52 (target=71)
+      [22] new #13
+        + Class [java/lang/StringBuilder]
+      [25] dup
+      [26] invokespecial #28
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [29] aload_1 v1
+      [30] invokevirtual #30
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [33] aload_2 v2
+      [34] invokeinterface #34
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [39] invokevirtual #27
+        + Methodref [java/lang/Object.toString ()Ljava/lang/String;]
+      [42] invokevirtual #30
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [45] aload_2 v2
+      [46] invokeinterface #33
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [51] ifeq +8 (target=59)
+      [54] ldc #2
+        + String [ ]
+      [56] goto +5 (target=61)
+      [59] ldc #1
+        + String []
+      [61] invokevirtual #30
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [64] invokevirtual #31
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [67] astore_1 v1
+      [68] goto -55 (target=13)
+      [71] new #13
+        + Class [java/lang/StringBuilder]
+      [74] dup
+      [75] invokespecial #28
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [78] ldc #7
+        + String [[ ]
+      [80] invokevirtual #30
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [83] aload_1 v1
+      [84] invokevirtual #30
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [87] ldc #3
+        + String [ ]]
+      [89] invokevirtual #30
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [92] aload_0 v0
+      [93] getfield #20
+        + Fieldref [com/tectus/a/a/c.d Ljava/lang/Boolean;]
+      [96] invokevirtual #24
+        + Methodref [java/lang/Boolean.booleanValue ()Z]
+      [99] ifeq +8 (target=107)
+      [102] ldc #4
+        + String [ closed,]
+      [104] goto +5 (target=109)
+      [107] ldc #5
+        + String [ open,]
+      [109] invokevirtual #30
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [112] ldc #6
+        + String [ size: ]
+      [114] invokevirtual #30
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [117] aload_0 v0
+      [118] invokevirtual #23
+        + Methodref [com/tectus/a/a/c.g ()I]
+      [121] invokevirtual #29
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [124] invokevirtual #31
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [127] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 6):
+        - [13] Var: ...[a:java/lang/String][a:java/util/Iterator], Stack: (empty)
+        - [59] Var: ..., Stack: [a:java/lang/StringBuilder]
+        - [61] Var: [a:com/tectus/a/a/c][a:java/lang/String][a:java/util/Iterator], Stack: [a:java/lang/StringBuilder][a:java/lang/String]
+        - [71] Var: ..., Stack: (empty)
+        - [107] Var: ..., Stack: [a:java/lang/StringBuilder]
+        - [109] Var: [a:com/tectus/a/a/c][a:java/lang/String][a:java/util/Iterator], Stack: [a:java/lang/StringBuilder][a:java/lang/String]
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/tectus/demo/copycat/PatternActivity
+  Superclass:    android/app/Activity
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.tectus.demo.copycat.PatternActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 180):
+  + Integer [2130903041]
+  + Integer [2131296256]
+  + Integer [2131361795]
+  + Integer [2131361796]
+  + String [2]
+  + String [24]
+  + String [8x8]
+  + String [pref_pattern_allow_diagonals]
+  + String [pref_pattern_allow_open]
+  + String [pref_pattern_grid_size]
+  + String [pref_pattern_max_colors]
+  + String [pref_pattern_max_dots]
+  + String [pref_pattern_max_shapes]
+  + String [x]
+  + Class [[Ljava/lang/String;]
+  + Class [android/app/ActionBar]
+  + Class [android/app/Activity]
+  + Class [android/content/Intent]
+  + Class [android/content/SharedPreferences]
+  + Class [android/preference/PreferenceManager]
+  + Class [android/view/MenuInflater]
+  + Class [android/view/MenuItem]
+  + Class [android/view/View]
+  + Class [com/tectus/demo/copycat/PatternActivity]
+  + Class [com/tectus/demo/copycat/PatternBackground]
+  + Class [com/tectus/demo/copycat/PatternView]
+  + Class [com/tectus/demo/copycat/SettingsActivity]
+  + Class [com/tectus/demo/copycat/a]
+  + Class [com/tectus/demo/copycat/b]
+  + Class [java/lang/Integer]
+  + Class [java/lang/NumberFormatException]
+  + Class [java/lang/String]
+  + Fieldref [com/tectus/demo/copycat/PatternActivity.a Lcom/tectus/demo/copycat/PatternView;]
+  + Fieldref [com/tectus/demo/copycat/PatternActivity.b Lcom/tectus/demo/copycat/PatternBackground;]
+  + Fieldref [com/tectus/demo/copycat/PatternActivity.c Landroid/content/SharedPreferences;]
+  + Fieldref [com/tectus/demo/copycat/b.a I]
+  + Fieldref [com/tectus/demo/copycat/b.b I]
+  + Fieldref [com/tectus/demo/copycat/b.c I]
+  + Fieldref [com/tectus/demo/copycat/b.d I]
+  + Fieldref [com/tectus/demo/copycat/b.e I]
+  + Fieldref [com/tectus/demo/copycat/b.f Z]
+  + Fieldref [com/tectus/demo/copycat/b.g Z]
+  + Methodref [android/app/ActionBar.setDisplayHomeAsUpEnabled (Z)V]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/preference/PreferenceManager.getDefaultSharedPreferences (Landroid/content/Context;)Landroid/content/SharedPreferences;]
+  + Methodref [android/view/MenuInflater.inflate (ILandroid/view/Menu;)V]
+  + Methodref [com/tectus/demo/copycat/PatternActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [com/tectus/demo/copycat/PatternActivity.getActionBar ()Landroid/app/ActionBar;]
+  + Methodref [com/tectus/demo/copycat/PatternActivity.getMenuInflater ()Landroid/view/MenuInflater;]
+  + Methodref [com/tectus/demo/copycat/PatternActivity.setContentView (I)V]
+  + Methodref [com/tectus/demo/copycat/PatternActivity.startActivity (Landroid/content/Intent;)V]
+  + Methodref [com/tectus/demo/copycat/PatternBackground.a (II)V]
+  + Methodref [com/tectus/demo/copycat/PatternView.a (II)V]
+  + Methodref [com/tectus/demo/copycat/PatternView.setShapes (Ljava/util/List;)V]
+  + Methodref [com/tectus/demo/copycat/a.<init> (Lcom/tectus/demo/copycat/PatternActivity;)V]
+  + Methodref [com/tectus/demo/copycat/a.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [com/tectus/demo/copycat/b.<init> (Lcom/tectus/demo/copycat/PatternActivity;)V]
+  + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+  + Methodref [java/lang/String.split (Ljava/lang/String;I)[Ljava/lang/String;]
+  + InterfaceMethodref [android/content/SharedPreferences.getBoolean (Ljava/lang/String;Z)Z]
+  + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [<init> (Lcom/tectus/demo/copycat/PatternActivity;)V]
+  + NameAndType [a (II)V]
+  + NameAndType [a I]
+  + NameAndType [a Lcom/tectus/demo/copycat/PatternView;]
+  + NameAndType [b I]
+  + NameAndType [b Lcom/tectus/demo/copycat/PatternBackground;]
+  + NameAndType [c I]
+  + NameAndType [c Landroid/content/SharedPreferences;]
+  + NameAndType [d I]
+  + NameAndType [e I]
+  + NameAndType [execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + NameAndType [f Z]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [g Z]
+  + NameAndType [getActionBar ()Landroid/app/ActionBar;]
+  + NameAndType [getBoolean (Ljava/lang/String;Z)Z]
+  + NameAndType [getDefaultSharedPreferences (Landroid/content/Context;)Landroid/content/SharedPreferences;]
+  + NameAndType [getItemId ()I]
+  + NameAndType [getMenuInflater ()Landroid/view/MenuInflater;]
+  + NameAndType [getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [inflate (ILandroid/view/Menu;)V]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [parseInt (Ljava/lang/String;)I]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setDisplayHomeAsUpEnabled (Z)V]
+  + NameAndType [setShapes (Ljava/util/List;)V]
+  + NameAndType [split (Ljava/lang/String;I)[Ljava/lang/String;]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/app/ActionBar;]
+  + Utf8 [()Landroid/view/MenuInflater;]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(II)V]
+  + Utf8 [(ILandroid/view/Menu;)V]
+  + Utf8 [(Landroid/content/Context;)Landroid/content/SharedPreferences;]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/Menu;)Z]
+  + Utf8 [(Landroid/view/MenuItem;)Z]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Lcom/tectus/demo/copycat/PatternActivity;)V]
+  + Utf8 [(Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;I)[Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;Z)Z]
+  + Utf8 [(Ljava/util/List;)V]
+  + Utf8 [(Z)V]
+  + Utf8 [([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Utf8 [2]
+  + Utf8 [24]
+  + Utf8 [8x8]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Landroid/content/SharedPreferences;]
+  + Utf8 [Lcom/tectus/demo/copycat/PatternBackground;]
+  + Utf8 [Lcom/tectus/demo/copycat/PatternView;]
+  + Utf8 [StackMapTable]
+  + Utf8 [Z]
+  + Utf8 [[Ljava/lang/String;]
+  + Utf8 [a]
+  + Utf8 [android/app/ActionBar]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/SharedPreferences]
+  + Utf8 [android/preference/PreferenceManager]
+  + Utf8 [android/view/MenuInflater]
+  + Utf8 [android/view/MenuItem]
+  + Utf8 [android/view/View]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/tectus/demo/copycat/PatternActivity]
+  + Utf8 [com/tectus/demo/copycat/PatternBackground]
+  + Utf8 [com/tectus/demo/copycat/PatternView]
+  + Utf8 [com/tectus/demo/copycat/SettingsActivity]
+  + Utf8 [com/tectus/demo/copycat/a]
+  + Utf8 [com/tectus/demo/copycat/b]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [execute]
+  + Utf8 [f]
+  + Utf8 [findViewById]
+  + Utf8 [g]
+  + Utf8 [generatePattern]
+  + Utf8 [getActionBar]
+  + Utf8 [getBoolean]
+  + Utf8 [getDefaultSharedPreferences]
+  + Utf8 [getItemId]
+  + Utf8 [getMenuInflater]
+  + Utf8 [getString]
+  + Utf8 [inflate]
+  + Utf8 [java/lang/Integer]
+  + Utf8 [java/lang/NumberFormatException]
+  + Utf8 [java/lang/String]
+  + Utf8 [onCreate]
+  + Utf8 [onCreateOptionsMenu]
+  + Utf8 [onOptionsItemSelected]
+  + Utf8 [parseInt]
+  + Utf8 [pref_pattern_allow_diagonals]
+  + Utf8 [pref_pattern_allow_open]
+  + Utf8 [pref_pattern_grid_size]
+  + Utf8 [pref_pattern_max_colors]
+  + Utf8 [pref_pattern_max_dots]
+  + Utf8 [pref_pattern_max_shapes]
+  + Utf8 [setContentView]
+  + Utf8 [setDisplayHomeAsUpEnabled]
+  + Utf8 [setShapes]
+  + Utf8 [split]
+  + Utf8 [startActivity]
+  + Utf8 [x]
+
+Fields (count = 3):
+  + Field:        a Lcom/tectus/demo/copycat/PatternView;
+    Access flags: 0x0
+      = com.tectus.demo.copycat.PatternView a
+  + Field:        b Lcom/tectus/demo/copycat/PatternBackground;
+    Access flags: 0x0
+      = com.tectus.demo.copycat.PatternBackground b
+  + Field:        c Landroid/content/SharedPreferences;
+    Access flags: 0x0
+      = android.content.SharedPreferences c
+
+Methods (count = 5):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public PatternActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #44
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 54, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #45
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #1
+        + Integer [2130903041]
+      [8] invokevirtual #52
+        + Methodref [com/tectus/demo/copycat/PatternActivity.setContentView (I)V]
+      [11] aload_0 v0
+      [12] aload_0 v0
+      [13] invokestatic #47
+        + Methodref [android/preference/PreferenceManager.getDefaultSharedPreferences (Landroid/content/Context;)Landroid/content/SharedPreferences;]
+      [16] putfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.c Landroid/content/SharedPreferences;]
+      [19] aload_0 v0
+      [20] aload_0 v0
+      [21] ldc #4
+        + Integer [2131361796]
+      [23] invokevirtual #49
+        + Methodref [com/tectus/demo/copycat/PatternActivity.findViewById (I)Landroid/view/View;]
+      [26] checkcast #26
+        + Class [com/tectus/demo/copycat/PatternView]
+      [29] putfield #33
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.a Lcom/tectus/demo/copycat/PatternView;]
+      [32] aload_0 v0
+      [33] aload_0 v0
+      [34] ldc #3
+        + Integer [2131361795]
+      [36] invokevirtual #49
+        + Methodref [com/tectus/demo/copycat/PatternActivity.findViewById (I)Landroid/view/View;]
+      [39] checkcast #25
+        + Class [com/tectus/demo/copycat/PatternBackground]
+      [42] putfield #34
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.b Lcom/tectus/demo/copycat/PatternBackground;]
+      [45] aload_0 v0
+      [46] invokevirtual #50
+        + Methodref [com/tectus/demo/copycat/PatternActivity.getActionBar ()Landroid/app/ActionBar;]
+      [49] iconst_1
+      [50] invokevirtual #43
+        + Methodref [android/app/ActionBar.setDisplayHomeAsUpEnabled (Z)V]
+      [53] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreateOptionsMenu(Landroid/view/Menu;)Z
+    Access flags: 0x1
+      = public boolean onCreateOptionsMenu(android.view.Menu)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 14, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #51
+        + Methodref [com/tectus/demo/copycat/PatternActivity.getMenuInflater ()Landroid/view/MenuInflater;]
+      [4] astore_2 v2
+      [5] aload_2 v2
+      [6] ldc #2
+        + Integer [2131296256]
+      [8] aload_1 v1
+      [9] invokevirtual #48
+        + Methodref [android/view/MenuInflater.inflate (ILandroid/view/Menu;)V]
+      [12] iconst_1
+      [13] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    Access flags: 0x1
+      = public boolean onOptionsItemSelected(android.view.MenuItem)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 40, locals = 2, stack = 5):
+      [0] aload_1 v1
+      [1] invokeinterface #64
+        + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
+      [6] lookupswitch (1 offsets, default=32) (target=38)
+        2131361799: offset = 18, target = 24
+        default: offset = 32, target = 38
+      [24] aload_0 v0
+      [25] new #18
+        + Class [android/content/Intent]
+      [28] dup
+      [29] aload_0 v0
+      [30] ldc #27
+        + Class [com/tectus/demo/copycat/SettingsActivity]
+      [32] invokespecial #46
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [35] invokevirtual #53
+        + Methodref [com/tectus/demo/copycat/PatternActivity.startActivity (Landroid/content/Intent;)V]
+      [38] iconst_1
+      [39] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [24] Var: ..., Stack: (empty)
+        - [38] Var: ..., Stack: (empty)
+  + Method:       generatePattern(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void generatePattern(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 231, locals = 7, stack = 5):
+      [0] bipush 6
+      [2] istore_2 v2
+      [3] bipush 6
+      [5] istore_3 v3
+      [6] aload_0 v0
+      [7] getfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.c Landroid/content/SharedPreferences;]
+      [10] ldc #10
+        + String [pref_pattern_grid_size]
+      [12] ldc #7
+        + String [8x8]
+      [14] invokeinterface #63
+        + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [19] astore v4
+      [21] aload v4
+      [23] ldc #14
+        + String [x]
+      [25] iconst_2
+      [26] invokevirtual #61
+        + Methodref [java/lang/String.split (Ljava/lang/String;I)[Ljava/lang/String;]
+      [29] astore v5
+      [31] aload v5
+      [33] arraylength
+      [34] iconst_2
+      [35] ificmpne +29 (target=64)
+      [38] aload v5
+      [40] iconst_0
+      [41] aaload
+      [42] invokestatic #60
+        + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [45] istore_2 v2
+      [46] aload v5
+      [48] iconst_1
+      [49] aaload
+      [50] invokestatic #60
+        + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [53] istore_3 v3
+      [54] goto +10 (target=64)
+      [57] astore v6
+      [59] bipush 6
+      [61] dup
+      [62] istore_3 v3
+      [63] istore_2 v2
+      [64] aload_0 v0
+      [65] getfield #34
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.b Lcom/tectus/demo/copycat/PatternBackground;]
+      [68] iload_2 v2
+      [69] iload_3 v3
+      [70] invokevirtual #54
+        + Methodref [com/tectus/demo/copycat/PatternBackground.a (II)V]
+      [73] aload_0 v0
+      [74] getfield #33
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.a Lcom/tectus/demo/copycat/PatternView;]
+      [77] iload_2 v2
+      [78] iload_3 v3
+      [79] invokevirtual #55
+        + Methodref [com/tectus/demo/copycat/PatternView.a (II)V]
+      [82] aload_0 v0
+      [83] getfield #33
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.a Lcom/tectus/demo/copycat/PatternView;]
+      [86] aconst_null
+      [87] invokevirtual #56
+        + Methodref [com/tectus/demo/copycat/PatternView.setShapes (Ljava/util/List;)V]
+      [90] new #29
+        + Class [com/tectus/demo/copycat/b]
+      [93] dup
+      [94] aload_0 v0
+      [95] invokespecial #59
+        + Methodref [com/tectus/demo/copycat/b.<init> (Lcom/tectus/demo/copycat/PatternActivity;)V]
+      [98] astore v6
+      [100] aload v6
+      [102] iload_2 v2
+      [103] putfield #36
+        + Fieldref [com/tectus/demo/copycat/b.a I]
+      [106] aload v6
+      [108] iload_3 v3
+      [109] putfield #37
+        + Fieldref [com/tectus/demo/copycat/b.b I]
+      [112] aload v6
+      [114] aload_0 v0
+      [115] getfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.c Landroid/content/SharedPreferences;]
+      [118] ldc #12
+        + String [pref_pattern_max_dots]
+      [120] ldc #6
+        + String [24]
+      [122] invokeinterface #63
+        + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [127] invokestatic #60
+        + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [130] putfield #38
+        + Fieldref [com/tectus/demo/copycat/b.c I]
+      [133] aload v6
+      [135] aload_0 v0
+      [136] getfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.c Landroid/content/SharedPreferences;]
+      [139] ldc #13
+        + String [pref_pattern_max_shapes]
+      [141] ldc #5
+        + String [2]
+      [143] invokeinterface #63
+        + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [148] invokestatic #60
+        + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [151] putfield #39
+        + Fieldref [com/tectus/demo/copycat/b.d I]
+      [154] aload v6
+      [156] aload_0 v0
+      [157] getfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.c Landroid/content/SharedPreferences;]
+      [160] ldc #11
+        + String [pref_pattern_max_colors]
+      [162] ldc #5
+        + String [2]
+      [164] invokeinterface #63
+        + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [169] invokestatic #60
+        + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [172] putfield #40
+        + Fieldref [com/tectus/demo/copycat/b.e I]
+      [175] aload v6
+      [177] aload_0 v0
+      [178] getfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.c Landroid/content/SharedPreferences;]
+      [181] ldc #9
+        + String [pref_pattern_allow_open]
+      [183] iconst_0
+      [184] invokeinterface #62
+        + InterfaceMethodref [android/content/SharedPreferences.getBoolean (Ljava/lang/String;Z)Z]
+      [189] putfield #41
+        + Fieldref [com/tectus/demo/copycat/b.f Z]
+      [192] aload v6
+      [194] aload_0 v0
+      [195] getfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.c Landroid/content/SharedPreferences;]
+      [198] ldc #8
+        + String [pref_pattern_allow_diagonals]
+      [200] iconst_0
+      [201] invokeinterface #62
+        + InterfaceMethodref [android/content/SharedPreferences.getBoolean (Ljava/lang/String;Z)Z]
+      [206] putfield #42
+        + Fieldref [com/tectus/demo/copycat/b.g Z]
+      [209] new #28
+        + Class [com/tectus/demo/copycat/a]
+      [212] dup
+      [213] aload_0 v0
+      [214] invokespecial #57
+        + Methodref [com/tectus/demo/copycat/a.<init> (Lcom/tectus/demo/copycat/PatternActivity;)V]
+      [217] iconst_1
+      [218] anewarray #29
+        + Class [com/tectus/demo/copycat/b]
+      [221] dup
+      [222] iconst_0
+      [223] aload v6
+      [225] aastore
+      [226] invokevirtual #58
+        + Methodref [com/tectus/demo/copycat/a.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+      [229] pop
+      [230] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (38 -> 54: 57):
+      + Class [java/lang/NumberFormatException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [57] Var: [a:com/tectus/demo/copycat/PatternActivity][a:android/view/View][i][i][a:java/lang/String][a:[Ljava/lang/String;], Stack: [a:java/lang/NumberFormatException]
+        - [64] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/tectus/demo/copycat/a
+  Superclass:    android/os/AsyncTask
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.tectus.demo.copycat.a extends android.os.AsyncTask
+
+Interfaces (count = 0):
+
+Constant Pool (count = 83):
+  + Class [[Lcom/tectus/demo/copycat/b;]
+  + Class [android/os/AsyncTask]
+  + Class [com/tectus/a/a/b]
+  + Class [com/tectus/demo/copycat/PatternActivity]
+  + Class [com/tectus/demo/copycat/PatternView]
+  + Class [com/tectus/demo/copycat/a]
+  + Class [com/tectus/demo/copycat/b]
+  + Class [java/lang/Boolean]
+  + Class [java/util/List]
+  + Fieldref [com/tectus/demo/copycat/PatternActivity.a Lcom/tectus/demo/copycat/PatternView;]
+  + Fieldref [com/tectus/demo/copycat/a.a Lcom/tectus/demo/copycat/PatternActivity;]
+  + Fieldref [com/tectus/demo/copycat/b.a I]
+  + Fieldref [com/tectus/demo/copycat/b.b I]
+  + Fieldref [com/tectus/demo/copycat/b.c I]
+  + Fieldref [com/tectus/demo/copycat/b.d I]
+  + Fieldref [com/tectus/demo/copycat/b.e I]
+  + Fieldref [com/tectus/demo/copycat/b.f Z]
+  + Fieldref [com/tectus/demo/copycat/b.g Z]
+  + Methodref [android/os/AsyncTask.<init> ()V]
+  + Methodref [com/tectus/a/a/b.<init> (II)V]
+  + Methodref [com/tectus/a/a/b.a ()Ljava/util/List;]
+  + Methodref [com/tectus/a/a/b.a (IIILjava/lang/Boolean;Ljava/lang/Boolean;)V]
+  + Methodref [com/tectus/demo/copycat/PatternView.invalidate ()V]
+  + Methodref [com/tectus/demo/copycat/PatternView.setShapes (Ljava/util/List;)V]
+  + Methodref [com/tectus/demo/copycat/a.a (Ljava/util/List;)V]
+  + Methodref [com/tectus/demo/copycat/a.a ([Lcom/tectus/demo/copycat/b;)Ljava/util/List;]
+  + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (II)V]
+  + NameAndType [a ()Ljava/util/List;]
+  + NameAndType [a (IIILjava/lang/Boolean;Ljava/lang/Boolean;)V]
+  + NameAndType [a (Ljava/util/List;)V]
+  + NameAndType [a ([Lcom/tectus/demo/copycat/b;)Ljava/util/List;]
+  + NameAndType [a I]
+  + NameAndType [a Lcom/tectus/demo/copycat/PatternActivity;]
+  + NameAndType [a Lcom/tectus/demo/copycat/PatternView;]
+  + NameAndType [b I]
+  + NameAndType [c I]
+  + NameAndType [d I]
+  + NameAndType [e I]
+  + NameAndType [f Z]
+  + NameAndType [g Z]
+  + NameAndType [invalidate ()V]
+  + NameAndType [setShapes (Ljava/util/List;)V]
+  + NameAndType [valueOf (Z)Ljava/lang/Boolean;]
+  + Utf8 [()Ljava/util/List;]
+  + Utf8 [()V]
+  + Utf8 [(II)V]
+  + Utf8 [(IIILjava/lang/Boolean;Ljava/lang/Boolean;)V]
+  + Utf8 [(Lcom/tectus/demo/copycat/PatternActivity;)V]
+  + Utf8 [(Ljava/lang/Object;)V]
+  + Utf8 [(Ljava/util/List;)V]
+  + Utf8 [(Z)Ljava/lang/Boolean;]
+  + Utf8 [([Lcom/tectus/demo/copycat/b;)Ljava/util/List;]
+  + Utf8 [([Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Lcom/tectus/demo/copycat/PatternActivity;]
+  + Utf8 [Lcom/tectus/demo/copycat/PatternView;]
+  + Utf8 [Z]
+  + Utf8 [[Lcom/tectus/demo/copycat/b;]
+  + Utf8 [a]
+  + Utf8 [android/os/AsyncTask]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/tectus/a/a/b]
+  + Utf8 [com/tectus/demo/copycat/PatternActivity]
+  + Utf8 [com/tectus/demo/copycat/PatternView]
+  + Utf8 [com/tectus/demo/copycat/a]
+  + Utf8 [com/tectus/demo/copycat/b]
+  + Utf8 [d]
+  + Utf8 [doInBackground]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [invalidate]
+  + Utf8 [java/lang/Boolean]
+  + Utf8 [java/util/List]
+  + Utf8 [onPostExecute]
+  + Utf8 [setShapes]
+  + Utf8 [valueOf]
+
+Fields (count = 1):
+  + Field:        a Lcom/tectus/demo/copycat/PatternActivity;
+    Access flags: 0x1010
+      = final synthetic com.tectus.demo.copycat.PatternActivity a
+
+Methods (count = 5):
+  - Method:       <init>(Lcom/tectus/demo/copycat/PatternActivity;)V
+    Access flags: 0x0
+      = a(com.tectus.demo.copycat.PatternActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #11
+        + Fieldref [com/tectus/demo/copycat/a.a Lcom/tectus/demo/copycat/PatternActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #19
+        + Methodref [android/os/AsyncTask.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a([Lcom/tectus/demo/copycat/b;)Ljava/util/List;
+    Access flags: 0x84
+      = protected varargs java.util.List a(com.tectus.demo.copycat.b[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 65, locals = 3, stack = 7):
+      [0] new #3
+        + Class [com/tectus/a/a/b]
+      [3] dup
+      [4] aload_1 v1
+      [5] iconst_0
+      [6] aaload
+      [7] getfield #12
+        + Fieldref [com/tectus/demo/copycat/b.a I]
+      [10] aload_1 v1
+      [11] iconst_0
+      [12] aaload
+      [13] getfield #13
+        + Fieldref [com/tectus/demo/copycat/b.b I]
+      [16] invokespecial #20
+        + Methodref [com/tectus/a/a/b.<init> (II)V]
+      [19] astore_2 v2
+      [20] aload_2 v2
+      [21] aload_1 v1
+      [22] iconst_0
+      [23] aaload
+      [24] getfield #14
+        + Fieldref [com/tectus/demo/copycat/b.c I]
+      [27] aload_1 v1
+      [28] iconst_0
+      [29] aaload
+      [30] getfield #15
+        + Fieldref [com/tectus/demo/copycat/b.d I]
+      [33] aload_1 v1
+      [34] iconst_0
+      [35] aaload
+      [36] getfield #16
+        + Fieldref [com/tectus/demo/copycat/b.e I]
+      [39] aload_1 v1
+      [40] iconst_0
+      [41] aaload
+      [42] getfield #17
+        + Fieldref [com/tectus/demo/copycat/b.f Z]
+      [45] invokestatic #27
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [48] aload_1 v1
+      [49] iconst_0
+      [50] aaload
+      [51] getfield #18
+        + Fieldref [com/tectus/demo/copycat/b.g Z]
+      [54] invokestatic #27
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [57] invokevirtual #22
+        + Methodref [com/tectus/a/a/b.a (IIILjava/lang/Boolean;Ljava/lang/Boolean;)V]
+      [60] aload_2 v2
+      [61] invokevirtual #21
+        + Methodref [com/tectus/a/a/b.a ()Ljava/util/List;]
+      [64] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/util/List;)V
+    Access flags: 0x4
+      = protected void a(java.util.List)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 22, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #11
+        + Fieldref [com/tectus/demo/copycat/a.a Lcom/tectus/demo/copycat/PatternActivity;]
+      [4] getfield #10
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.a Lcom/tectus/demo/copycat/PatternView;]
+      [7] aload_1 v1
+      [8] invokevirtual #24
+        + Methodref [com/tectus/demo/copycat/PatternView.setShapes (Ljava/util/List;)V]
+      [11] aload_0 v0
+      [12] getfield #11
+        + Fieldref [com/tectus/demo/copycat/a.a Lcom/tectus/demo/copycat/PatternActivity;]
+      [15] getfield #10
+        + Fieldref [com/tectus/demo/copycat/PatternActivity.a Lcom/tectus/demo/copycat/PatternView;]
+      [18] invokevirtual #23
+        + Methodref [com/tectus/demo/copycat/PatternView.invalidate ()V]
+      [21] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onPostExecute(Ljava/lang/Object;)V
+    Access flags: 0x1004
+      = protected synthetic void onPostExecute(java.lang.Object)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 9, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] checkcast #9
+        + Class [java/util/List]
+      [5] invokevirtual #25
+        + Methodref [com/tectus/demo/copycat/a.a (Ljava/util/List;)V]
+      [8] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+    Access flags: 0x1004
+      = protected synthetic java.lang.Object doInBackground(java.lang.Object[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 9, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] checkcast #1
+        + Class [[Lcom/tectus/demo/copycat/b;]
+      [5] invokevirtual #26
+        + Methodref [com/tectus/demo/copycat/a.a ([Lcom/tectus/demo/copycat/b;)Ljava/util/List;]
+      [8] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/tectus/demo/copycat/b
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.tectus.demo.copycat.b extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 24):
+  + Class [com/tectus/demo/copycat/b]
+  + Class [java/lang/Object]
+  + Fieldref [com/tectus/demo/copycat/b.h Lcom/tectus/demo/copycat/PatternActivity;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [h Lcom/tectus/demo/copycat/PatternActivity;]
+  + Utf8 [()V]
+  + Utf8 [(Lcom/tectus/demo/copycat/PatternActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Lcom/tectus/demo/copycat/PatternActivity;]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/tectus/demo/copycat/b]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [h]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 8):
+  + Field:        a I
+    Access flags: 0x1
+      = public int a
+  + Field:        b I
+    Access flags: 0x1
+      = public int b
+  + Field:        c I
+    Access flags: 0x1
+      = public int c
+  + Field:        d I
+    Access flags: 0x1
+      = public int d
+  + Field:        e I
+    Access flags: 0x1
+      = public int e
+  + Field:        f Z
+    Access flags: 0x1
+      = public boolean f
+  + Field:        g Z
+    Access flags: 0x1
+      = public boolean g
+  + Field:        h Lcom/tectus/demo/copycat/PatternActivity;
+    Access flags: 0x1010
+      = final synthetic com.tectus.demo.copycat.PatternActivity h
+
+Methods (count = 1):
+  - Method:       <init>(Lcom/tectus/demo/copycat/PatternActivity;)V
+    Access flags: 0x0
+      = b(com.tectus.demo.copycat.PatternActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #3
+        + Fieldref [com/tectus/demo/copycat/b.h Lcom/tectus/demo/copycat/PatternActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #4
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/tectus/demo/copycat/PatternBackground
+  Superclass:    android/view/View
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.tectus.demo.copycat.PatternBackground extends android.view.View
+
+Interfaces (count = 0):
+
+Constant Pool (count = 92):
+  + Integer [2131099652]
+  + Float [0.2]
+  + Float [0.95]
+  + Class [android/content/res/Resources]
+  + Class [android/graphics/Canvas]
+  + Class [android/graphics/Paint]
+  + Class [android/graphics/Paint$Style]
+  + Class [android/view/View]
+  + Class [com/tectus/demo/copycat/PatternBackground]
+  + Class [java/lang/Math]
+  + Fieldref [android/graphics/Paint$Style.FILL Landroid/graphics/Paint$Style;]
+  + Fieldref [com/tectus/demo/copycat/PatternBackground.a I]
+  + Fieldref [com/tectus/demo/copycat/PatternBackground.b I]
+  + Fieldref [com/tectus/demo/copycat/PatternBackground.c Landroid/graphics/Paint;]
+  + Methodref [android/content/res/Resources.getColor (I)I]
+  + Methodref [android/graphics/Canvas.drawCircle (FFFLandroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.getHeight ()I]
+  + Methodref [android/graphics/Canvas.getWidth ()I]
+  + Methodref [android/graphics/Canvas.translate (FF)V]
+  + Methodref [android/graphics/Paint.<init> ()V]
+  + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+  + Methodref [android/graphics/Paint.setColor (I)V]
+  + Methodref [android/graphics/Paint.setStyle (Landroid/graphics/Paint$Style;)V]
+  + Methodref [android/view/View.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + Methodref [android/view/View.onDraw (Landroid/graphics/Canvas;)V]
+  + Methodref [com/tectus/demo/copycat/PatternBackground.getResources ()Landroid/content/res/Resources;]
+  + Methodref [com/tectus/demo/copycat/PatternBackground.invalidate ()V]
+  + Methodref [java/lang/Math.max (II)I]
+  + Methodref [java/lang/Math.min (II)I]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + NameAndType [FILL Landroid/graphics/Paint$Style;]
+  + NameAndType [a I]
+  + NameAndType [b I]
+  + NameAndType [c Landroid/graphics/Paint;]
+  + NameAndType [drawCircle (FFFLandroid/graphics/Paint;)V]
+  + NameAndType [getColor (I)I]
+  + NameAndType [getHeight ()I]
+  + NameAndType [getResources ()Landroid/content/res/Resources;]
+  + NameAndType [getWidth ()I]
+  + NameAndType [invalidate ()V]
+  + NameAndType [max (II)I]
+  + NameAndType [min (II)I]
+  + NameAndType [onDraw (Landroid/graphics/Canvas;)V]
+  + NameAndType [setAntiAlias (Z)V]
+  + NameAndType [setColor (I)V]
+  + NameAndType [setStyle (Landroid/graphics/Paint$Style;)V]
+  + NameAndType [translate (FF)V]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/content/res/Resources;]
+  + Utf8 [()V]
+  + Utf8 [(FF)V]
+  + Utf8 [(FFFLandroid/graphics/Paint;)V]
+  + Utf8 [(I)I]
+  + Utf8 [(I)V]
+  + Utf8 [(II)I]
+  + Utf8 [(II)V]
+  + Utf8 [(Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + Utf8 [(Landroid/graphics/Canvas;)V]
+  + Utf8 [(Landroid/graphics/Paint$Style;)V]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [FILL]
+  + Utf8 [I]
+  + Utf8 [Landroid/graphics/Paint$Style;]
+  + Utf8 [Landroid/graphics/Paint;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/content/res/Resources]
+  + Utf8 [android/graphics/Canvas]
+  + Utf8 [android/graphics/Paint]
+  + Utf8 [android/graphics/Paint$Style]
+  + Utf8 [android/view/View]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/tectus/demo/copycat/PatternBackground]
+  + Utf8 [drawCircle]
+  + Utf8 [getColor]
+  + Utf8 [getHeight]
+  + Utf8 [getResources]
+  + Utf8 [getWidth]
+  + Utf8 [invalidate]
+  + Utf8 [java/lang/Math]
+  + Utf8 [max]
+  + Utf8 [min]
+  + Utf8 [onDraw]
+  + Utf8 [setAntiAlias]
+  + Utf8 [setColor]
+  + Utf8 [setStyle]
+  + Utf8 [translate]
+
+Fields (count = 3):
+  + Field:        a I
+    Access flags: 0x2
+      = private int a
+  + Field:        b I
+    Access flags: 0x2
+      = private int b
+  + Field:        c Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint c
+
+Methods (count = 3):
+  - Method:       <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    Access flags: 0x1
+      = public PatternBackground(android.content.Context,android.util.AttributeSet)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 64, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aload_2 v2
+      [3] invokespecial #24
+        + Methodref [android/view/View.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+      [6] aload_0 v0
+      [7] bipush 8
+      [9] putfield #12
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.a I]
+      [12] aload_0 v0
+      [13] bipush 8
+      [15] putfield #13
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.b I]
+      [18] aload_0 v0
+      [19] new #6
+        + Class [android/graphics/Paint]
+      [22] dup
+      [23] invokespecial #20
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [26] putfield #14
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.c Landroid/graphics/Paint;]
+      [29] aload_0 v0
+      [30] getfield #14
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.c Landroid/graphics/Paint;]
+      [33] iconst_1
+      [34] invokevirtual #21
+        + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+      [37] aload_0 v0
+      [38] getfield #14
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.c Landroid/graphics/Paint;]
+      [41] getstatic #11
+        + Fieldref [android/graphics/Paint$Style.FILL Landroid/graphics/Paint$Style;]
+      [44] invokevirtual #23
+        + Methodref [android/graphics/Paint.setStyle (Landroid/graphics/Paint$Style;)V]
+      [47] aload_0 v0
+      [48] getfield #14
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.c Landroid/graphics/Paint;]
+      [51] aload_0 v0
+      [52] invokevirtual #26
+        + Methodref [com/tectus/demo/copycat/PatternBackground.getResources ()Landroid/content/res/Resources;]
+      [55] ldc #1
+        + Integer [2131099652]
+      [57] invokevirtual #15
+        + Methodref [android/content/res/Resources.getColor (I)I]
+      [60] invokevirtual #22
+        + Methodref [android/graphics/Paint.setColor (I)V]
+      [63] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(II)V
+    Access flags: 0x1
+      = public void a(int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #12
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.a I]
+      [5] aload_0 v0
+      [6] iload_2 v2
+      [7] putfield #13
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.b I]
+      [10] aload_0 v0
+      [11] invokevirtual #27
+        + Methodref [com/tectus/demo/copycat/PatternBackground.invalidate ()V]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onDraw(Landroid/graphics/Canvas;)V
+    Access flags: 0x4
+      = protected void onDraw(android.graphics.Canvas)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 155, locals = 9, stack = 5):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #25
+        + Methodref [android/view/View.onDraw (Landroid/graphics/Canvas;)V]
+      [5] ldc #3
+        + Float [0.95]
+      [7] aload_1 v1
+      [8] invokevirtual #18
+        + Methodref [android/graphics/Canvas.getWidth ()I]
+      [11] aload_1 v1
+      [12] invokevirtual #17
+        + Methodref [android/graphics/Canvas.getHeight ()I]
+      [15] invokestatic #29
+        + Methodref [java/lang/Math.min (II)I]
+      [18] i2f
+      [19] fmul
+      [20] fstore_2 v2
+      [21] fload_2 v2
+      [22] aload_0 v0
+      [23] getfield #12
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.a I]
+      [26] aload_0 v0
+      [27] getfield #13
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.b I]
+      [30] invokestatic #28
+        + Methodref [java/lang/Math.max (II)I]
+      [33] i2f
+      [34] fdiv
+      [35] fstore_3 v3
+      [36] fload_3 v3
+      [37] ldc #2
+        + Float [0.2]
+      [39] fmul
+      [40] fstore v4
+      [42] fload_3 v3
+      [43] aload_0 v0
+      [44] getfield #12
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.a I]
+      [47] iconst_1
+      [48] isub
+      [49] i2f
+      [50] fmul
+      [51] fstore v5
+      [53] fload_3 v3
+      [54] aload_0 v0
+      [55] getfield #13
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.b I]
+      [58] iconst_1
+      [59] isub
+      [60] i2f
+      [61] fmul
+      [62] fstore v6
+      [64] aload_1 v1
+      [65] aload_1 v1
+      [66] invokevirtual #18
+        + Methodref [android/graphics/Canvas.getWidth ()I]
+      [69] i2f
+      [70] fload v5
+      [72] fsub
+      [73] fconst_2
+      [74] fdiv
+      [75] aload_1 v1
+      [76] invokevirtual #17
+        + Methodref [android/graphics/Canvas.getHeight ()I]
+      [79] i2f
+      [80] fload v6
+      [82] fsub
+      [83] fconst_2
+      [84] fdiv
+      [85] invokevirtual #19
+        + Methodref [android/graphics/Canvas.translate (FF)V]
+      [88] aload_0 v0
+      [89] getfield #14
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.c Landroid/graphics/Paint;]
+      [92] getstatic #11
+        + Fieldref [android/graphics/Paint$Style.FILL Landroid/graphics/Paint$Style;]
+      [95] invokevirtual #23
+        + Methodref [android/graphics/Paint.setStyle (Landroid/graphics/Paint$Style;)V]
+      [98] iconst_0
+      [99] istore v7
+      [101] iload v7
+      [103] aload_0 v0
+      [104] getfield #12
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.a I]
+      [107] ificmpge +47 (target=154)
+      [110] iconst_0
+      [111] istore v8
+      [113] iload v8
+      [115] aload_0 v0
+      [116] getfield #13
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.b I]
+      [119] ificmpge +29 (target=148)
+      [122] aload_1 v1
+      [123] iload v7
+      [125] i2f
+      [126] fload_3 v3
+      [127] fmul
+      [128] iload v8
+      [130] i2f
+      [131] fload_3 v3
+      [132] fmul
+      [133] fload v4
+      [135] aload_0 v0
+      [136] getfield #14
+        + Fieldref [com/tectus/demo/copycat/PatternBackground.c Landroid/graphics/Paint;]
+      [139] invokevirtual #16
+        + Methodref [android/graphics/Canvas.drawCircle (FFFLandroid/graphics/Paint;)V]
+      [142] iinc v8, 1
+      [145] goto -32 (target=113)
+      [148] iinc v7, 1
+      [151] goto -50 (target=101)
+      [154] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 4):
+        - [101] Var: [a:com/tectus/demo/copycat/PatternBackground][a:android/graphics/Canvas][f][f][f][f][f][i], Stack: 
+        - [113] Var: ...[i], Stack: (empty)
+        - [148] Var: -1, Stack: (empty)
+        - [154] Var: -1, Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/tectus/demo/copycat/PatternView
+  Superclass:    android/view/View
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.tectus.demo.copycat.PatternView extends android.view.View
+
+Interfaces (count = 0):
+
+Constant Pool (count = 214):
+  + Float [0.2]
+  + Float [0.95]
+  + Float [12.0]
+  + String [_circle_fill]
+  + String [_shape_fill]
+  + String [_shape_stroke]
+  + String [color]
+  + String [style]
+  + Class [android/content/Context]
+  + Class [android/content/res/Resources]
+  + Class [android/graphics/Canvas]
+  + Class [android/graphics/Paint]
+  + Class [android/graphics/Paint$Cap]
+  + Class [android/graphics/Paint$Style]
+  + Class [android/graphics/Path]
+  + Class [android/view/View]
+  + Class [com/tectus/a/a/a]
+  + Class [com/tectus/a/a/c]
+  + Class [com/tectus/demo/copycat/PatternView]
+  + Class [java/lang/Boolean]
+  + Class [java/lang/Math]
+  + Class [java/lang/StringBuilder]
+  + Class [java/util/Iterator]
+  + Class [java/util/List]
+  + Fieldref [android/graphics/Paint$Cap.ROUND Landroid/graphics/Paint$Cap;]
+  + Fieldref [android/graphics/Paint$Style.FILL Landroid/graphics/Paint$Style;]
+  + Fieldref [android/graphics/Paint$Style.STROKE Landroid/graphics/Paint$Style;]
+  + Fieldref [com/tectus/a/a/a.a I]
+  + Fieldref [com/tectus/a/a/a.b I]
+  + Fieldref [com/tectus/demo/copycat/PatternView.a I]
+  + Fieldref [com/tectus/demo/copycat/PatternView.b I]
+  + Fieldref [com/tectus/demo/copycat/PatternView.c Ljava/util/List;]
+  + Fieldref [com/tectus/demo/copycat/PatternView.d Landroid/graphics/Path;]
+  + Fieldref [com/tectus/demo/copycat/PatternView.e Landroid/graphics/Paint;]
+  + Fieldref [com/tectus/demo/copycat/PatternView.f Landroid/graphics/Paint;]
+  + Methodref [android/content/Context.getPackageName ()Ljava/lang/String;]
+  + Methodref [android/content/res/Resources.getColor (I)I]
+  + Methodref [android/content/res/Resources.getIdentifier (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [android/graphics/Canvas.drawCircle (FFFLandroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.drawPath (Landroid/graphics/Path;Landroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.getHeight ()I]
+  + Methodref [android/graphics/Canvas.getWidth ()I]
+  + Methodref [android/graphics/Canvas.translate (FF)V]
+  + Methodref [android/graphics/Paint.<init> ()V]
+  + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+  + Methodref [android/graphics/Paint.setColor (I)V]
+  + Methodref [android/graphics/Paint.setStrokeCap (Landroid/graphics/Paint$Cap;)V]
+  + Methodref [android/graphics/Paint.setStrokeWidth (F)V]
+  + Methodref [android/graphics/Paint.setStyle (Landroid/graphics/Paint$Style;)V]
+  + Methodref [android/graphics/Path.<init> ()V]
+  + Methodref [android/graphics/Path.close ()V]
+  + Methodref [android/graphics/Path.lineTo (FF)V]
+  + Methodref [android/graphics/Path.moveTo (FF)V]
+  + Methodref [android/graphics/Path.reset ()V]
+  + Methodref [android/view/View.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + Methodref [android/view/View.onDraw (Landroid/graphics/Canvas;)V]
+  + Methodref [com/tectus/a/a/c.b ()I]
+  + Methodref [com/tectus/a/a/c.c ()Ljava/util/List;]
+  + Methodref [com/tectus/a/a/c.e ()Lcom/tectus/a/a/a;]
+  + Methodref [com/tectus/a/a/c.i ()Ljava/lang/Boolean;]
+  + Methodref [com/tectus/demo/copycat/PatternView.getContext ()Landroid/content/Context;]
+  + Methodref [com/tectus/demo/copycat/PatternView.getResources ()Landroid/content/res/Resources;]
+  + Methodref [java/lang/Boolean.booleanValue ()Z]
+  + Methodref [java/lang/Math.max (II)I]
+  + Methodref [java/lang/Math.min (II)I]
+  + Methodref [java/lang/StringBuilder.<init> ()V]
+  + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+  + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+  + InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + NameAndType [FILL Landroid/graphics/Paint$Style;]
+  + NameAndType [ROUND Landroid/graphics/Paint$Cap;]
+  + NameAndType [STROKE Landroid/graphics/Paint$Style;]
+  + NameAndType [a I]
+  + NameAndType [append (I)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b ()I]
+  + NameAndType [b I]
+  + NameAndType [booleanValue ()Z]
+  + NameAndType [c ()Ljava/util/List;]
+  + NameAndType [c Ljava/util/List;]
+  + NameAndType [close ()V]
+  + NameAndType [d Landroid/graphics/Path;]
+  + NameAndType [drawCircle (FFFLandroid/graphics/Paint;)V]
+  + NameAndType [drawPath (Landroid/graphics/Path;Landroid/graphics/Paint;)V]
+  + NameAndType [e ()Lcom/tectus/a/a/a;]
+  + NameAndType [e Landroid/graphics/Paint;]
+  + NameAndType [f Landroid/graphics/Paint;]
+  + NameAndType [getColor (I)I]
+  + NameAndType [getContext ()Landroid/content/Context;]
+  + NameAndType [getHeight ()I]
+  + NameAndType [getIdentifier (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [getPackageName ()Ljava/lang/String;]
+  + NameAndType [getResources ()Landroid/content/res/Resources;]
+  + NameAndType [getWidth ()I]
+  + NameAndType [hasNext ()Z]
+  + NameAndType [i ()Ljava/lang/Boolean;]
+  + NameAndType [iterator ()Ljava/util/Iterator;]
+  + NameAndType [lineTo (FF)V]
+  + NameAndType [max (II)I]
+  + NameAndType [min (II)I]
+  + NameAndType [moveTo (FF)V]
+  + NameAndType [next ()Ljava/lang/Object;]
+  + NameAndType [onDraw (Landroid/graphics/Canvas;)V]
+  + NameAndType [reset ()V]
+  + NameAndType [setAntiAlias (Z)V]
+  + NameAndType [setColor (I)V]
+  + NameAndType [setStrokeCap (Landroid/graphics/Paint$Cap;)V]
+  + NameAndType [setStrokeWidth (F)V]
+  + NameAndType [setStyle (Landroid/graphics/Paint$Style;)V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [translate (FF)V]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()Landroid/content/res/Resources;]
+  + Utf8 [()Lcom/tectus/a/a/a;]
+  + Utf8 [()Ljava/lang/Boolean;]
+  + Utf8 [()Ljava/lang/Object;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()Ljava/util/Iterator;]
+  + Utf8 [()Ljava/util/List;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(F)V]
+  + Utf8 [(FF)V]
+  + Utf8 [(FFFLandroid/graphics/Paint;)V]
+  + Utf8 [(I)I]
+  + Utf8 [(I)Ljava/lang/StringBuilder;]
+  + Utf8 [(I)V]
+  + Utf8 [(II)I]
+  + Utf8 [(II)V]
+  + Utf8 [(Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + Utf8 [(Landroid/graphics/Canvas;)V]
+  + Utf8 [(Landroid/graphics/Paint$Cap;)V]
+  + Utf8 [(Landroid/graphics/Paint$Style;)V]
+  + Utf8 [(Landroid/graphics/Path;Landroid/graphics/Paint;)V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Ljava/util/List;)V]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [FILL]
+  + Utf8 [I]
+  + Utf8 [Landroid/graphics/Paint$Cap;]
+  + Utf8 [Landroid/graphics/Paint$Style;]
+  + Utf8 [Landroid/graphics/Paint;]
+  + Utf8 [Landroid/graphics/Path;]
+  + Utf8 [Ljava/util/List;]
+  + Utf8 [ROUND]
+  + Utf8 [STROKE]
+  + Utf8 [StackMapTable]
+  + Utf8 [_circle_fill]
+  + Utf8 [_shape_fill]
+  + Utf8 [_shape_stroke]
+  + Utf8 [a]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/res/Resources]
+  + Utf8 [android/graphics/Canvas]
+  + Utf8 [android/graphics/Paint]
+  + Utf8 [android/graphics/Paint$Cap]
+  + Utf8 [android/graphics/Paint$Style]
+  + Utf8 [android/graphics/Path]
+  + Utf8 [android/view/View]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [booleanValue]
+  + Utf8 [c]
+  + Utf8 [close]
+  + Utf8 [color]
+  + Utf8 [com/tectus/a/a/a]
+  + Utf8 [com/tectus/a/a/c]
+  + Utf8 [com/tectus/demo/copycat/PatternView]
+  + Utf8 [d]
+  + Utf8 [drawCircle]
+  + Utf8 [drawPath]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [getColor]
+  + Utf8 [getContext]
+  + Utf8 [getHeight]
+  + Utf8 [getIdentifier]
+  + Utf8 [getPackageName]
+  + Utf8 [getResources]
+  + Utf8 [getWidth]
+  + Utf8 [hasNext]
+  + Utf8 [i]
+  + Utf8 [iterator]
+  + Utf8 [java/lang/Boolean]
+  + Utf8 [java/lang/Math]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/util/Iterator]
+  + Utf8 [java/util/List]
+  + Utf8 [lineTo]
+  + Utf8 [max]
+  + Utf8 [min]
+  + Utf8 [moveTo]
+  + Utf8 [next]
+  + Utf8 [onDraw]
+  + Utf8 [reset]
+  + Utf8 [setAntiAlias]
+  + Utf8 [setColor]
+  + Utf8 [setShapes]
+  + Utf8 [setStrokeCap]
+  + Utf8 [setStrokeWidth]
+  + Utf8 [setStyle]
+  + Utf8 [style]
+  + Utf8 [toString]
+  + Utf8 [translate]
+
+Fields (count = 6):
+  + Field:        a I
+    Access flags: 0x2
+      = private int a
+  + Field:        b I
+    Access flags: 0x2
+      = private int b
+  + Field:        c Ljava/util/List;
+    Access flags: 0x2
+      = private java.util.List c
+  + Field:        d Landroid/graphics/Path;
+    Access flags: 0x2
+      = private android.graphics.Path d
+  + Field:        e Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint e
+  + Field:        f Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint f
+
+Methods (count = 4):
+  - Method:       <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    Access flags: 0x1
+      = public PatternView(android.content.Context,android.util.AttributeSet)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 99, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aload_2 v2
+      [3] invokespecial #55
+        + Methodref [android/view/View.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+      [6] aload_0 v0
+      [7] bipush 8
+      [9] putfield #30
+        + Fieldref [com/tectus/demo/copycat/PatternView.a I]
+      [12] aload_0 v0
+      [13] bipush 8
+      [15] putfield #31
+        + Fieldref [com/tectus/demo/copycat/PatternView.b I]
+      [18] aload_0 v0
+      [19] new #15
+        + Class [android/graphics/Path]
+      [22] dup
+      [23] invokespecial #50
+        + Methodref [android/graphics/Path.<init> ()V]
+      [26] putfield #33
+        + Fieldref [com/tectus/demo/copycat/PatternView.d Landroid/graphics/Path;]
+      [29] aload_0 v0
+      [30] new #12
+        + Class [android/graphics/Paint]
+      [33] dup
+      [34] invokespecial #44
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [37] putfield #34
+        + Fieldref [com/tectus/demo/copycat/PatternView.e Landroid/graphics/Paint;]
+      [40] aload_0 v0
+      [41] new #12
+        + Class [android/graphics/Paint]
+      [44] dup
+      [45] invokespecial #44
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [48] putfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternView.f Landroid/graphics/Paint;]
+      [51] aload_0 v0
+      [52] getfield #34
+        + Fieldref [com/tectus/demo/copycat/PatternView.e Landroid/graphics/Paint;]
+      [55] iconst_1
+      [56] invokevirtual #45
+        + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+      [59] aload_0 v0
+      [60] getfield #34
+        + Fieldref [com/tectus/demo/copycat/PatternView.e Landroid/graphics/Paint;]
+      [63] getstatic #26
+        + Fieldref [android/graphics/Paint$Style.FILL Landroid/graphics/Paint$Style;]
+      [66] invokevirtual #49
+        + Methodref [android/graphics/Paint.setStyle (Landroid/graphics/Paint$Style;)V]
+      [69] aload_0 v0
+      [70] getfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternView.f Landroid/graphics/Paint;]
+      [73] getstatic #27
+        + Fieldref [android/graphics/Paint$Style.STROKE Landroid/graphics/Paint$Style;]
+      [76] invokevirtual #49
+        + Methodref [android/graphics/Paint.setStyle (Landroid/graphics/Paint$Style;)V]
+      [79] aload_0 v0
+      [80] getfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternView.f Landroid/graphics/Paint;]
+      [83] getstatic #25
+        + Fieldref [android/graphics/Paint$Cap.ROUND Landroid/graphics/Paint$Cap;]
+      [86] invokevirtual #47
+        + Methodref [android/graphics/Paint.setStrokeCap (Landroid/graphics/Paint$Cap;)V]
+      [89] aload_0 v0
+      [90] getfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternView.f Landroid/graphics/Paint;]
+      [93] ldc #3
+        + Float [12.0]
+      [95] invokevirtual #48
+        + Methodref [android/graphics/Paint.setStrokeWidth (F)V]
+      [98] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(II)V
+    Access flags: 0x1
+      = public void a(int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 11, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #30
+        + Fieldref [com/tectus/demo/copycat/PatternView.a I]
+      [5] aload_0 v0
+      [6] iload_2 v2
+      [7] putfield #31
+        + Fieldref [com/tectus/demo/copycat/PatternView.b I]
+      [10] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       setShapes(Ljava/util/List;)V
+    Access flags: 0x1
+      = public void setShapes(java.util.List)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #32
+        + Fieldref [com/tectus/demo/copycat/PatternView.c Ljava/util/List;]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onDraw(Landroid/graphics/Canvas;)V
+    Access flags: 0x4
+      = protected void onDraw(android.graphics.Canvas)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 454, locals = 16, stack = 5):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #56
+        + Methodref [android/view/View.onDraw (Landroid/graphics/Canvas;)V]
+      [5] aload_0 v0
+      [6] getfield #32
+        + Fieldref [com/tectus/demo/copycat/PatternView.c Ljava/util/List;]
+      [9] ifnonnull +4 (target=13)
+      [12] return
+      [13] ldc #2
+        + Float [0.95]
+      [15] aload_1 v1
+      [16] invokevirtual #42
+        + Methodref [android/graphics/Canvas.getWidth ()I]
+      [19] aload_1 v1
+      [20] invokevirtual #41
+        + Methodref [android/graphics/Canvas.getHeight ()I]
+      [23] invokestatic #65
+        + Methodref [java/lang/Math.min (II)I]
+      [26] i2f
+      [27] fmul
+      [28] fstore_2 v2
+      [29] fload_2 v2
+      [30] aload_0 v0
+      [31] getfield #30
+        + Fieldref [com/tectus/demo/copycat/PatternView.a I]
+      [34] aload_0 v0
+      [35] getfield #31
+        + Fieldref [com/tectus/demo/copycat/PatternView.b I]
+      [38] invokestatic #64
+        + Methodref [java/lang/Math.max (II)I]
+      [41] i2f
+      [42] fdiv
+      [43] fstore_3 v3
+      [44] fload_3 v3
+      [45] ldc #1
+        + Float [0.2]
+      [47] fmul
+      [48] fstore v4
+      [50] fload_3 v3
+      [51] aload_0 v0
+      [52] getfield #30
+        + Fieldref [com/tectus/demo/copycat/PatternView.a I]
+      [55] iconst_1
+      [56] isub
+      [57] i2f
+      [58] fmul
+      [59] fstore v5
+      [61] fload_3 v3
+      [62] aload_0 v0
+      [63] getfield #31
+        + Fieldref [com/tectus/demo/copycat/PatternView.b I]
+      [66] iconst_1
+      [67] isub
+      [68] i2f
+      [69] fmul
+      [70] fstore v6
+      [72] aload_1 v1
+      [73] aload_1 v1
+      [74] invokevirtual #42
+        + Methodref [android/graphics/Canvas.getWidth ()I]
+      [77] i2f
+      [78] fload v5
+      [80] fsub
+      [81] fconst_2
+      [82] fdiv
+      [83] aload_1 v1
+      [84] invokevirtual #41
+        + Methodref [android/graphics/Canvas.getHeight ()I]
+      [87] i2f
+      [88] fload v6
+      [90] fsub
+      [91] fconst_2
+      [92] fdiv
+      [93] invokevirtual #43
+        + Methodref [android/graphics/Canvas.translate (FF)V]
+      [96] aload_0 v0
+      [97] getfield #32
+        + Fieldref [com/tectus/demo/copycat/PatternView.c Ljava/util/List;]
+      [100] invokeinterface #72
+        + InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+      [105] astore v7
+      [107] aload v7
+      [109] invokeinterface #70
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [114] ifeq +339 (target=453)
+      [117] aload v7
+      [119] invokeinterface #71
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [124] checkcast #18
+        + Class [com/tectus/a/a/c]
+      [127] astore v8
+      [129] aload v8
+      [131] invokevirtual #57
+        + Methodref [com/tectus/a/a/c.b ()I]
+      [134] istore v9
+      [136] aload_0 v0
+      [137] invokevirtual #62
+        + Methodref [com/tectus/demo/copycat/PatternView.getResources ()Landroid/content/res/Resources;]
+      [140] new #22
+        + Class [java/lang/StringBuilder]
+      [143] dup
+      [144] invokespecial #66
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [147] ldc #8
+        + String [style]
+      [149] invokevirtual #68
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [152] iload v9
+      [154] invokevirtual #67
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [157] ldc #4
+        + String [_circle_fill]
+      [159] invokevirtual #68
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [162] invokevirtual #69
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [165] ldc #7
+        + String [color]
+      [167] aload_0 v0
+      [168] invokevirtual #61
+        + Methodref [com/tectus/demo/copycat/PatternView.getContext ()Landroid/content/Context;]
+      [171] invokevirtual #36
+        + Methodref [android/content/Context.getPackageName ()Ljava/lang/String;]
+      [174] invokevirtual #38
+        + Methodref [android/content/res/Resources.getIdentifier (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I]
+      [177] istore v10
+      [179] aload_0 v0
+      [180] invokevirtual #62
+        + Methodref [com/tectus/demo/copycat/PatternView.getResources ()Landroid/content/res/Resources;]
+      [183] new #22
+        + Class [java/lang/StringBuilder]
+      [186] dup
+      [187] invokespecial #66
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [190] ldc #8
+        + String [style]
+      [192] invokevirtual #68
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [195] iload v9
+      [197] invokevirtual #67
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [200] ldc #6
+        + String [_shape_stroke]
+      [202] invokevirtual #68
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [205] invokevirtual #69
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [208] ldc #7
+        + String [color]
+      [210] aload_0 v0
+      [211] invokevirtual #61
+        + Methodref [com/tectus/demo/copycat/PatternView.getContext ()Landroid/content/Context;]
+      [214] invokevirtual #36
+        + Methodref [android/content/Context.getPackageName ()Ljava/lang/String;]
+      [217] invokevirtual #38
+        + Methodref [android/content/res/Resources.getIdentifier (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I]
+      [220] istore v11
+      [222] aload_0 v0
+      [223] invokevirtual #62
+        + Methodref [com/tectus/demo/copycat/PatternView.getResources ()Landroid/content/res/Resources;]
+      [226] new #22
+        + Class [java/lang/StringBuilder]
+      [229] dup
+      [230] invokespecial #66
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [233] ldc #8
+        + String [style]
+      [235] invokevirtual #68
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [238] iload v9
+      [240] invokevirtual #67
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [243] ldc #5
+        + String [_shape_fill]
+      [245] invokevirtual #68
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [248] invokevirtual #69
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [251] ldc #7
+        + String [color]
+      [253] aload_0 v0
+      [254] invokevirtual #61
+        + Methodref [com/tectus/demo/copycat/PatternView.getContext ()Landroid/content/Context;]
+      [257] invokevirtual #36
+        + Methodref [android/content/Context.getPackageName ()Ljava/lang/String;]
+      [260] invokevirtual #38
+        + Methodref [android/content/res/Resources.getIdentifier (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I]
+      [263] istore v12
+      [265] aload_0 v0
+      [266] getfield #34
+        + Fieldref [com/tectus/demo/copycat/PatternView.e Landroid/graphics/Paint;]
+      [269] aload_0 v0
+      [270] invokevirtual #62
+        + Methodref [com/tectus/demo/copycat/PatternView.getResources ()Landroid/content/res/Resources;]
+      [273] iload v10
+      [275] invokevirtual #37
+        + Methodref [android/content/res/Resources.getColor (I)I]
+      [278] invokevirtual #46
+        + Methodref [android/graphics/Paint.setColor (I)V]
+      [281] aload_0 v0
+      [282] getfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternView.f Landroid/graphics/Paint;]
+      [285] aload_0 v0
+      [286] invokevirtual #62
+        + Methodref [com/tectus/demo/copycat/PatternView.getResources ()Landroid/content/res/Resources;]
+      [289] iload v11
+      [291] invokevirtual #37
+        + Methodref [android/content/res/Resources.getColor (I)I]
+      [294] invokevirtual #46
+        + Methodref [android/graphics/Paint.setColor (I)V]
+      [297] aload_0 v0
+      [298] getfield #33
+        + Fieldref [com/tectus/demo/copycat/PatternView.d Landroid/graphics/Path;]
+      [301] invokevirtual #54
+        + Methodref [android/graphics/Path.reset ()V]
+      [304] aload v8
+      [306] invokevirtual #59
+        + Methodref [com/tectus/a/a/c.e ()Lcom/tectus/a/a/a;]
+      [309] astore v13
+      [311] aload_0 v0
+      [312] getfield #33
+        + Fieldref [com/tectus/demo/copycat/PatternView.d Landroid/graphics/Path;]
+      [315] aload v13
+      [317] getfield #28
+        + Fieldref [com/tectus/a/a/a.a I]
+      [320] i2f
+      [321] fload_3 v3
+      [322] fmul
+      [323] aload v13
+      [325] getfield #29
+        + Fieldref [com/tectus/a/a/a.b I]
+      [328] i2f
+      [329] fload_3 v3
+      [330] fmul
+      [331] invokevirtual #53
+        + Methodref [android/graphics/Path.moveTo (FF)V]
+      [334] aload v8
+      [336] invokevirtual #58
+        + Methodref [com/tectus/a/a/c.c ()Ljava/util/List;]
+      [339] invokeinterface #72
+        + InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+      [344] astore v14
+      [346] aload v14
+      [348] invokeinterface #70
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [353] ifeq +67 (target=420)
+      [356] aload v14
+      [358] invokeinterface #71
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [363] checkcast #17
+        + Class [com/tectus/a/a/a]
+      [366] astore v15
+      [368] aload_1 v1
+      [369] aload v15
+      [371] getfield #28
+        + Fieldref [com/tectus/a/a/a.a I]
+      [374] i2f
+      [375] fload_3 v3
+      [376] fmul
+      [377] aload v15
+      [379] getfield #29
+        + Fieldref [com/tectus/a/a/a.b I]
+      [382] i2f
+      [383] fload_3 v3
+      [384] fmul
+      [385] fload v4
+      [387] aload_0 v0
+      [388] getfield #34
+        + Fieldref [com/tectus/demo/copycat/PatternView.e Landroid/graphics/Paint;]
+      [391] invokevirtual #39
+        + Methodref [android/graphics/Canvas.drawCircle (FFFLandroid/graphics/Paint;)V]
+      [394] aload_0 v0
+      [395] getfield #33
+        + Fieldref [com/tectus/demo/copycat/PatternView.d Landroid/graphics/Path;]
+      [398] aload v15
+      [400] getfield #28
+        + Fieldref [com/tectus/a/a/a.a I]
+      [403] i2f
+      [404] fload_3 v3
+      [405] fmul
+      [406] aload v15
+      [408] getfield #29
+        + Fieldref [com/tectus/a/a/a.b I]
+      [411] i2f
+      [412] fload_3 v3
+      [413] fmul
+      [414] invokevirtual #52
+        + Methodref [android/graphics/Path.lineTo (FF)V]
+      [417] goto -71 (target=346)
+      [420] aload v8
+      [422] invokevirtual #60
+        + Methodref [com/tectus/a/a/c.i ()Ljava/lang/Boolean;]
+      [425] invokevirtual #63
+        + Methodref [java/lang/Boolean.booleanValue ()Z]
+      [428] ifeq +10 (target=438)
+      [431] aload_0 v0
+      [432] getfield #33
+        + Fieldref [com/tectus/demo/copycat/PatternView.d Landroid/graphics/Path;]
+      [435] invokevirtual #51
+        + Methodref [android/graphics/Path.close ()V]
+      [438] aload_1 v1
+      [439] aload_0 v0
+      [440] getfield #33
+        + Fieldref [com/tectus/demo/copycat/PatternView.d Landroid/graphics/Path;]
+      [443] aload_0 v0
+      [444] getfield #35
+        + Fieldref [com/tectus/demo/copycat/PatternView.f Landroid/graphics/Paint;]
+      [447] invokevirtual #40
+        + Methodref [android/graphics/Canvas.drawPath (Landroid/graphics/Path;Landroid/graphics/Paint;)V]
+      [450] goto -343 (target=107)
+      [453] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 6):
+        - [13] Var: ..., Stack: (empty)
+        - [107] Var: [a:com/tectus/demo/copycat/PatternView][a:android/graphics/Canvas][f][f][f][f][f][a:java/util/Iterator], Stack: 
+        - [346] Var: [a:com/tectus/demo/copycat/PatternView][a:android/graphics/Canvas][f][f][f][f][f][a:java/util/Iterator][a:com/tectus/a/a/c][i][i][i][i][a:com/tectus/a/a/a][a:java/util/Iterator], Stack: 
+        - [420] Var: -1, Stack: (empty)
+        - [438] Var: ..., Stack: (empty)
+        - [453] Var: [a:com/tectus/demo/copycat/PatternView][a:android/graphics/Canvas][f][f][f][f][f], Stack: 
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/tectus/demo/copycat/SettingsActivity
+  Superclass:    android/preference/PreferenceActivity
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.tectus.demo.copycat.SettingsActivity extends android.preference.PreferenceActivity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 38):
+  + Integer [16908290]
+  + Class [android/app/FragmentManager]
+  + Class [android/app/FragmentTransaction]
+  + Class [android/preference/PreferenceActivity]
+  + Class [com/tectus/demo/copycat/SettingsActivity]
+  + Class [com/tectus/demo/copycat/c]
+  + Methodref [android/app/FragmentManager.beginTransaction ()Landroid/app/FragmentTransaction;]
+  + Methodref [android/app/FragmentTransaction.commit ()I]
+  + Methodref [android/app/FragmentTransaction.replace (ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
+  + Methodref [android/preference/PreferenceActivity.<init> ()V]
+  + Methodref [android/preference/PreferenceActivity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [com/tectus/demo/copycat/SettingsActivity.getFragmentManager ()Landroid/app/FragmentManager;]
+  + Methodref [com/tectus/demo/copycat/c.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [beginTransaction ()Landroid/app/FragmentTransaction;]
+  + NameAndType [commit ()I]
+  + NameAndType [getFragmentManager ()Landroid/app/FragmentManager;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [replace (ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/app/FragmentManager;]
+  + Utf8 [()Landroid/app/FragmentTransaction;]
+  + Utf8 [()V]
+  + Utf8 [(ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [android/app/FragmentManager]
+  + Utf8 [android/app/FragmentTransaction]
+  + Utf8 [android/preference/PreferenceActivity]
+  + Utf8 [beginTransaction]
+  + Utf8 [com/tectus/demo/copycat/SettingsActivity]
+  + Utf8 [com/tectus/demo/copycat/c]
+  + Utf8 [commit]
+  + Utf8 [getFragmentManager]
+  + Utf8 [onCreate]
+  + Utf8 [replace]
+
+Fields (count = 0):
+
+Methods (count = 2):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public SettingsActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #10
+        + Methodref [android/preference/PreferenceActivity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x4
+      = protected void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 29, locals = 2, stack = 4):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #11
+        + Methodref [android/preference/PreferenceActivity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] invokevirtual #12
+        + Methodref [com/tectus/demo/copycat/SettingsActivity.getFragmentManager ()Landroid/app/FragmentManager;]
+      [9] invokevirtual #7
+        + Methodref [android/app/FragmentManager.beginTransaction ()Landroid/app/FragmentTransaction;]
+      [12] ldc #1
+        + Integer [16908290]
+      [14] new #6
+        + Class [com/tectus/demo/copycat/c]
+      [17] dup
+      [18] invokespecial #13
+        + Methodref [com/tectus/demo/copycat/c.<init> ()V]
+      [21] invokevirtual #9
+        + Methodref [android/app/FragmentTransaction.replace (ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
+      [24] invokevirtual #8
+        + Methodref [android/app/FragmentTransaction.commit ()I]
+      [27] pop
+      [28] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/tectus/demo/copycat/c
+  Superclass:    android/preference/PreferenceFragment
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.tectus.demo.copycat.c extends android.preference.PreferenceFragment
+
+Interfaces (count = 0):
+
+Constant Pool (count = 19):
+  + Integer [2130968576]
+  + Class [android/preference/PreferenceFragment]
+  + Class [com/tectus/demo/copycat/c]
+  + Methodref [android/preference/PreferenceFragment.<init> ()V]
+  + Methodref [android/preference/PreferenceFragment.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [com/tectus/demo/copycat/c.addPreferencesFromResource (I)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [addPreferencesFromResource (I)V]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + Utf8 [()V]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [addPreferencesFromResource]
+  + Utf8 [android/preference/PreferenceFragment]
+  + Utf8 [com/tectus/demo/copycat/c]
+  + Utf8 [onCreate]
+
+Fields (count = 0):
+
+Methods (count = 2):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #4
+        + Methodref [android/preference/PreferenceFragment.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #5
+        + Methodref [android/preference/PreferenceFragment.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #1
+        + Integer [2130968576]
+      [8] invokevirtual #6
+        + Methodref [com/tectus/demo/copycat/c.addPreferencesFromResource (I)V]
+      [11] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/tectus/demo/copycat/StartActivity
+  Superclass:    android/app/Activity
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.tectus.demo.copycat.StartActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 35):
+  + Integer [2130903040]
+  + Class [android/app/Activity]
+  + Class [android/content/Intent]
+  + Class [com/tectus/demo/copycat/PatternActivity]
+  + Class [com/tectus/demo/copycat/SettingsActivity]
+  + Class [com/tectus/demo/copycat/StartActivity]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [com/tectus/demo/copycat/StartActivity.setContentView (I)V]
+  + Methodref [com/tectus/demo/copycat/StartActivity.startActivity (Landroid/content/Intent;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()V]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Intent]
+  + Utf8 [com/tectus/demo/copycat/PatternActivity]
+  + Utf8 [com/tectus/demo/copycat/SettingsActivity]
+  + Utf8 [com/tectus/demo/copycat/StartActivity]
+  + Utf8 [onCreate]
+  + Utf8 [setContentView]
+  + Utf8 [showGenerator]
+  + Utf8 [showSettings]
+  + Utf8 [startActivity]
+
+Fields (count = 0):
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public StartActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #7
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #8
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #1
+        + Integer [2130903040]
+      [8] invokevirtual #10
+        + Methodref [com/tectus/demo/copycat/StartActivity.setContentView (I)V]
+      [11] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       showSettings(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void showSettings(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 2, stack = 5):
+      [0] aload_0 v0
+      [1] new #3
+        + Class [android/content/Intent]
+      [4] dup
+      [5] aload_0 v0
+      [6] ldc #5
+        + Class [com/tectus/demo/copycat/SettingsActivity]
+      [8] invokespecial #9
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [11] invokevirtual #11
+        + Methodref [com/tectus/demo/copycat/StartActivity.startActivity (Landroid/content/Intent;)V]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       showGenerator(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void showGenerator(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 2, stack = 5):
+      [0] aload_0 v0
+      [1] new #3
+        + Class [android/content/Intent]
+      [4] dup
+      [5] aload_0 v0
+      [6] ldc #4
+        + Class [com/tectus/demo/copycat/PatternActivity]
+      [8] invokespecial #9
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [11] invokevirtual #11
+        + Methodref [com/tectus/demo/copycat/StartActivity.startActivity (Landroid/content/Intent;)V]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+

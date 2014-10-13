@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="pref_grid_size_entries">
+		<item name="3">3x3</item>
+		<item name="4">4x4</item>
+		<item name="5">5x5</item>
+		<item name="6">6x6</item>
+		<item name="7">7x7</item>
+		<item name="8">8x8</item>
+		<item name="9">9x9</item>
+	</string-array>
+
+	<string-array name="pref_max_dots_entries">
+		<item>4</item>
+		<item>6</item>
+		<item>8</item>
+		<item>10</item>
+		<item>12</item>
+		<item>14</item>
+		<item>16</item>
+		<item>18</item>
+		<item>20</item>
+		<item>22</item>
+		<item>24</item>
+		<item>26</item>
+		<item>28</item>
+		<item>30</item>
+	</string-array>
+
+	<string-array name="pref_max_shapes_entries">
+		<item>one shape</item>
+		<item>two shapes</item>
+		<item>three shapes</item>
+		<item>four shapes</item>
+		<item>five shapes</item>
+	</string-array>
+
+	<string-array name="pref_max_shapes_entries_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+	</string-array>
+
+	<string-array name="pref_max_colors_entries">
+		<item name="1">one color</item>
+		<item name="2">two colors</item>
+		<item name="3">three colors</item>
+		<item name="4">four colors</item>
+	</string-array>
+
+	<string-array name="pref_max_colors_entries_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+
+</resources>

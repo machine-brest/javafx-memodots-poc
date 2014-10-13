@@ -1,0 +1,103 @@
+#contentPane {
+	-fx-background-color: #42474F;
+	-fx-alignment: center;
+}
+
+.game-progress {
+	-fx-background-color: #42474F;
+	-fx-padding: 10 20 30 20;
+}
+
+.game-progress .level-number-background {
+	-fx-alignment: center;
+	-fx-pref-width: 60px;
+	-fx-pref-height: 60px;
+	-fx-background-color: #222427;
+	-fx-border-radius: 30;
+	-fx-background-radius: 30;
+	-fx-background-insets: 5;
+	-fx-border-color: #30333A;
+	-fx-border-width: 6;
+}
+
+.level-number-background .number-text {
+	-fx-pref-width: 60px;
+	-fx-pref-height: 60px;
+	-fx-alignment: center;
+	-fx-text-fill: #dfdfd0;
+	-fx-font-weight: bold;
+	-fx-font-size: 32px;
+	-fx-font-smoothing-type: gray;
+}
+
+.game-progress .progress-background {
+	-fx-alignment: center;
+	-fx-pref-height: 40px;
+	-fx-background-color: #30333A;
+	-fx-border-radius: 20;
+	-fx-background-radius: 20;
+	-fx-border-color: #30333A;
+	-fx-border-insets: 10;
+	-fx-border-width: 6;
+}
+
+#gridBackground Circle {
+	-fx-fill: #30333A;
+	-fx-snap-to-pixel: false;
+	-fx-snap-to-ticks: true;
+}
+
+#levelPattern Circle {
+	-fx-stroke: transparent;
+	-fx-snap-to-pixel: false;
+	-fx-snap-to-ticks: true;
+}
+
+#levelPattern Polyline {
+	-fx-stroke-width: 3.0;
+}
+
+#levelPattern Polygon {
+	-fx-opacity: 0.1;
+}
+
+#levelPattern Circle.color0   { -fx-fill: #eec55f; }
+#levelPattern Polyline.color0 { -fx-stroke: #eec55f; }
+#levelPattern Polygon.color0  { -fx-fill: #eec55f; }
+
+#levelPattern Circle.color1   { -fx-fill: #df564b; }
+#levelPattern Polyline.color1 { -fx-stroke: #df564b; }
+#levelPattern Polygon.color1  { -fx-fill: #df564b; }
+
+#levelPattern Circle.color2   { -fx-fill: #2abea2; }
+#levelPattern Polyline.color2 { -fx-stroke: #2abea2; }
+#levelPattern Polygon.color2  { -fx-fill: #2abea2; }
+
+#levelPattern Circle.color3   { -fx-fill: #18c5d8; }
+#levelPattern Polyline.color3 { -fx-stroke: #18c5d8; }
+#levelPattern Polygon.color3  { -fx-fill: #18c5d8; }
+
+#commandPane {
+	-fx-background-color: #42474F;
+}
+
+#commandPane HBox {
+	-fx-alignment: center;
+	-fx-padding: 10px;
+	-fx-spacing: 10.0;
+}
+
+#commandPane .button {
+	-fx-background-color: transparent;
+	-fx-border-color: #55585a;
+	-fx-border-radius: 5;
+	-fx-text-fill: #dfdfd0;
+	-fx-font-size: 16px;
+	-fx-pref-height: 30px;
+}
+
+#commandPane .button:hover {
+	-fx-background-color: #4a4d4f;
+	-fx-border-color: #a8a899;
+	-fx-text-fill: #dfdfd0;
+}

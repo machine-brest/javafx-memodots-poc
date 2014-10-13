@@ -1,0 +1,81 @@
+com.tectus.demo.copycat.PatternActivity
+com.tectus.demo.copycat.PatternActivity: PatternActivity()
+com.tectus.demo.copycat.PatternActivity: void generatePattern(android.view.View)
+com.tectus.demo.copycat.PatternBackground
+com.tectus.demo.copycat.PatternBackground: PatternBackground(android.content.Context,android.util.AttributeSet)
+com.tectus.demo.copycat.PatternView
+com.tectus.demo.copycat.PatternView: PatternView(android.content.Context,android.util.AttributeSet)
+com.tectus.demo.copycat.PatternView: void setShapes(java.util.List)
+com.tectus.demo.copycat.R$array: int pref_grid_size_entries
+com.tectus.demo.copycat.R$array: int pref_max_colors_entries
+com.tectus.demo.copycat.R$array: int pref_max_colors_entries_values
+com.tectus.demo.copycat.R$array: int pref_max_dots_entries
+com.tectus.demo.copycat.R$array: int pref_max_shapes_entries
+com.tectus.demo.copycat.R$array: int pref_max_shapes_entries_values
+com.tectus.demo.copycat.R$attr: int metaButtonBarButtonStyle
+com.tectus.demo.copycat.R$attr: int metaButtonBarStyle
+com.tectus.demo.copycat.R$color: int app_background_color
+com.tectus.demo.copycat.R$color: int app_text_color
+com.tectus.demo.copycat.R$color: int black_overlay
+com.tectus.demo.copycat.R$color: int pattern_background
+com.tectus.demo.copycat.R$color: int pattern_background_circle
+com.tectus.demo.copycat.R$color: int style0_circle_fill
+com.tectus.demo.copycat.R$color: int style0_shape_fill
+com.tectus.demo.copycat.R$color: int style0_shape_stroke
+com.tectus.demo.copycat.R$color: int style1_circle_fill
+com.tectus.demo.copycat.R$color: int style1_shape_fill
+com.tectus.demo.copycat.R$color: int style1_shape_stroke
+com.tectus.demo.copycat.R$color: int style2_circle_fill
+com.tectus.demo.copycat.R$color: int style2_shape_fill
+com.tectus.demo.copycat.R$color: int style2_shape_stroke
+com.tectus.demo.copycat.R$color: int style3_circle_fill
+com.tectus.demo.copycat.R$color: int style3_shape_fill
+com.tectus.demo.copycat.R$color: int style3_shape_stroke
+com.tectus.demo.copycat.R$drawable: int ic_launcher
+com.tectus.demo.copycat.R$id: int footer
+com.tectus.demo.copycat.R$id: int generate
+com.tectus.demo.copycat.R$id: int menuSettings
+com.tectus.demo.copycat.R$id: int patternBackground
+com.tectus.demo.copycat.R$id: int patternDisplay
+com.tectus.demo.copycat.R$id: int patternView
+com.tectus.demo.copycat.R$id: int settingsButton
+com.tectus.demo.copycat.R$id: int startButton
+com.tectus.demo.copycat.R$layout: int launcher
+com.tectus.demo.copycat.R$layout: int pattern
+com.tectus.demo.copycat.R$menu: int pattern_menu
+com.tectus.demo.copycat.R$string: int activity_label_pattern
+com.tectus.demo.copycat.R$string: int activity_label_settings
+com.tectus.demo.copycat.R$string: int activity_label_start
+com.tectus.demo.copycat.R$string: int app_name
+com.tectus.demo.copycat.R$string: int generate_button
+com.tectus.demo.copycat.R$string: int launcher_title
+com.tectus.demo.copycat.R$string: int pref_header_pattern
+com.tectus.demo.copycat.R$string: int pref_pattern_allow_diagonals_sum
+com.tectus.demo.copycat.R$string: int pref_pattern_allow_diagonals_title
+com.tectus.demo.copycat.R$string: int pref_pattern_allow_open_summary
+com.tectus.demo.copycat.R$string: int pref_pattern_allow_open_title
+com.tectus.demo.copycat.R$string: int pref_pattern_grid_size_sum
+com.tectus.demo.copycat.R$string: int pref_pattern_grid_size_title
+com.tectus.demo.copycat.R$string: int pref_pattern_max_colors_sum
+com.tectus.demo.copycat.R$string: int pref_pattern_max_colors_title
+com.tectus.demo.copycat.R$string: int pref_pattern_max_dots_sum
+com.tectus.demo.copycat.R$string: int pref_pattern_max_dots_title
+com.tectus.demo.copycat.R$string: int pref_pattern_max_shapes_sum
+com.tectus.demo.copycat.R$string: int pref_pattern_max_shapes_title
+com.tectus.demo.copycat.R$string: int settings_button
+com.tectus.demo.copycat.R$string: int start_button
+com.tectus.demo.copycat.R$style: int AppTheme
+com.tectus.demo.copycat.R$style: int ButtonBar
+com.tectus.demo.copycat.R$style: int ButtonBarButton
+com.tectus.demo.copycat.R$style: int FullscreenActionBarStyle
+com.tectus.demo.copycat.R$style: int FullscreenTheme
+com.tectus.demo.copycat.R$styleable: int[] ButtonBarContainerTheme
+com.tectus.demo.copycat.R$styleable: int ButtonBarContainerTheme_metaButtonBarButtonStyle
+com.tectus.demo.copycat.R$styleable: int ButtonBarContainerTheme_metaButtonBarStyle
+com.tectus.demo.copycat.R$xml: int preferences
+com.tectus.demo.copycat.SettingsActivity
+com.tectus.demo.copycat.SettingsActivity: SettingsActivity()
+com.tectus.demo.copycat.StartActivity
+com.tectus.demo.copycat.StartActivity: StartActivity()
+com.tectus.demo.copycat.StartActivity: void showSettings(android.view.View)
+com.tectus.demo.copycat.StartActivity: void showGenerator(android.view.View)

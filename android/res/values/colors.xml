@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="app_background_color">#42474f</color>
+	<color name="app_text_color">#c3c3c3</color>
+
+	<color name="black_overlay">#66000000</color>
+	<color name="pattern_background">#42474f</color>
+	<color name="pattern_background_circle">#30333a</color>
+
+	<color name="style0_circle_fill">#eec55f</color>
+	<color name="style1_circle_fill">#df564b</color>
+	<color name="style2_circle_fill">#2abea2</color>
+	<color name="style3_circle_fill">#18c5d8</color>
+
+	<color name="style0_shape_stroke">#eec55f</color>
+	<color name="style1_shape_stroke">#df564b</color>
+	<color name="style2_shape_stroke">#2abea2</color>
+	<color name="style3_shape_stroke">#18c5d8</color>
+
+	<color name="style0_shape_fill">#eec55f20</color>
+	<color name="style1_shape_fill">#df564b20</color>
+	<color name="style2_shape_fill">#2abea220</color>
+	<color name="style3_shape_fill">#18c5d820</color>
+
+</resources>

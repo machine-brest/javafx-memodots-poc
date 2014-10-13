@@ -1,0 +1,24 @@
+com.tectus.copycat.generator.DotPattern:
+    private static final java.lang.String TAG
+    32:32:public java.util.List getShapes()
+com.tectus.copycat.generator.DotShape:
+    48:48:public com.tectus.copycat.generator.Dot get(int)
+    70:72:public void remove(int)
+    79:79:public java.lang.Boolean contains(int,int)
+    107:117:public boolean equals(com.tectus.copycat.generator.DotShape)
+com.tectus.demo.copycat.BuildConfig
+com.tectus.demo.copycat.PatternActivity$TaskCanceler
+com.tectus.demo.copycat.PatternDrawingThread
+com.tectus.demo.copycat.R
+com.tectus.demo.copycat.R$array
+com.tectus.demo.copycat.R$attr
+com.tectus.demo.copycat.R$color
+com.tectus.demo.copycat.R$drawable
+com.tectus.demo.copycat.R$id
+com.tectus.demo.copycat.R$layout
+com.tectus.demo.copycat.R$menu
+com.tectus.demo.copycat.R$string
+com.tectus.demo.copycat.R$style
+com.tectus.demo.copycat.R$styleable
+com.tectus.demo.copycat.R$xml
+com.tectus.demo.copycat.SettingsKeys

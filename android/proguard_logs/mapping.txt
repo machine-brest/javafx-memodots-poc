@@ -1,0 +1,92 @@
+com.tectus.copycat.generator.Dot -> com.tectus.a.a.a:
+    int x -> a
+    int y -> b
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+com.tectus.copycat.generator.DotPattern -> com.tectus.a.a.b:
+    int columns -> a
+    int rows -> b
+    int maxDots -> c
+    int maxShapes -> d
+    int maxColors -> e
+    boolean allowOpen -> f
+    boolean allowDiagonals -> g
+    java.util.List shapes -> h
+    java.util.Map shapeDots -> i
+    void setGridSize(int,int) -> a
+    void initialize(int,int,int,java.lang.Boolean,java.lang.Boolean) -> a
+    java.util.List generate() -> a
+    void colorize() -> b
+    java.lang.Boolean generateShape(java.util.List,com.tectus.copycat.generator.DotShape) -> a
+    java.lang.Boolean generateShapeDots(com.tectus.copycat.generator.DotShape,com.tectus.copycat.generator.Dot,java.util.List) -> a
+com.tectus.copycat.generator.DotShape -> com.tectus.a.a.c:
+    int id -> a
+    int colorIndex -> b
+    java.util.List dots -> c
+    java.lang.Boolean isClosed -> d
+    int maxSize -> e
+    int getId() -> a
+    void setId(int) -> a
+    int getColorIndex() -> b
+    void setColorIndex(int) -> b
+    java.util.List getDots() -> c
+    int getMaxSize() -> d
+    void setMaxSize(int) -> c
+    com.tectus.copycat.generator.Dot getFirst() -> e
+    com.tectus.copycat.generator.Dot getLast() -> f
+    void add(com.tectus.copycat.generator.Dot) -> a
+    void remove(com.tectus.copycat.generator.Dot) -> b
+    java.lang.Boolean contains(com.tectus.copycat.generator.Dot) -> c
+    int size() -> g
+    void close(java.lang.Boolean) -> a
+    void clear() -> h
+    java.lang.Boolean isClosed() -> i
+    java.lang.String toString() -> toString
+com.tectus.demo.copycat.PatternActivity -> com.tectus.demo.copycat.PatternActivity:
+    com.tectus.demo.copycat.PatternView patternDisplay -> a
+    com.tectus.demo.copycat.PatternBackground patternBackground -> b
+    android.content.SharedPreferences preferences -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void generatePattern(android.view.View) -> generatePattern
+com.tectus.demo.copycat.PatternActivity$GeneratePatternTask -> com.tectus.demo.copycat.a:
+    com.tectus.demo.copycat.PatternActivity this$0 -> a
+    java.util.List doInBackground(com.tectus.demo.copycat.PatternActivity$PatternParams[]) -> a
+    void onPostExecute(java.util.List) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.tectus.demo.copycat.PatternActivity$PatternParams -> com.tectus.demo.copycat.b:
+    int columns -> a
+    int rows -> b
+    int maxDots -> c
+    int maxShapes -> d
+    int maxColors -> e
+    boolean allowOpen -> f
+    boolean allowDiagonals -> g
+    com.tectus.demo.copycat.PatternActivity this$0 -> h
+com.tectus.demo.copycat.PatternBackground -> com.tectus.demo.copycat.PatternBackground:
+    int columns -> a
+    int rows -> b
+    android.graphics.Paint paint -> c
+    void setGridSize(int,int) -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+com.tectus.demo.copycat.PatternView -> com.tectus.demo.copycat.PatternView:
+    int columns -> a
+    int rows -> b
+    java.util.List shapes -> c
+    android.graphics.Path shapePath -> d
+    android.graphics.Paint dotPaint -> e
+    android.graphics.Paint shapePaint -> f
+    void setGridSize(int,int) -> a
+    void setShapes(java.util.List) -> setShapes
+    void onDraw(android.graphics.Canvas) -> onDraw
+com.tectus.demo.copycat.SettingsActivity -> com.tectus.demo.copycat.SettingsActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+com.tectus.demo.copycat.SettingsActivity$PrefsPatternFragment -> com.tectus.demo.copycat.c:
+    void onCreate(android.os.Bundle) -> onCreate
+com.tectus.demo.copycat.StartActivity -> com.tectus.demo.copycat.StartActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void showSettings(android.view.View) -> showSettings
+    void showGenerator(android.view.View) -> showGenerator
